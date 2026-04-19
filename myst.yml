@@ -1,0 +1,67 @@
+# MyST project configuration
+# Docs: https://mystmd.org/guide/configuration
+version: 1
+project:
+  title: "Vibe Marketing: The Future of Martech"
+  subtitle: "How One Platform, Every Touchpoint, and Intelligent Agents Are Rewriting the Rules of Growth"
+  authors:
+    - name: Dr. Ernesto Lee
+  keywords: [martech, marketing automation, CRM, AI, funnels, pipelines, workflows, VibeReach, vibe marketing]
+  license: CC-BY-4.0
+  open_access: true
+  github: https://github.com/liquid-books/vibe-marketing-martech
+  numbering:
+    heading_1: true
+    heading_2: true
+    heading_3: true
+    figure: true
+    table: true
+    equation: true
+  exports:
+    - format: pdf
+  toc:
+    - file: index.md
+    - title: "Front Matter"
+      children:
+        - file: chapters/ch00-before-you-can-market.md
+          title: "Chapter 0: Before You Can Market"
+    - title: "Part I — Foundations"
+      children:
+        - file: chapters/ch01-vibe-revolution.md
+          title: "Chapter 1: The Vibe Revolution"
+    - title: "Part II — The Three Pillars"
+      children:
+        - file: chapters/ch02-funnels.md
+          title: "Chapter 2: Funnels"
+        - file: chapters/ch03-pipelines.md
+          title: "Chapter 3: Pipelines"
+        - file: chapters/ch04-workflows.md
+          title: "Chapter 4: Workflows"
+    - title: "Part III — The Communication Layer"
+      children:
+        - file: chapters/ch05-phone-system.md
+          title: "Chapter 5: The Phone System"
+        - file: chapters/ch06-conversations.md
+          title: "Chapter 6: Conversations"
+    - title: "Part IV — The Closing Layer"
+      children:
+        - file: chapters/ch07-forms-documents-calendar.md
+          title: "Chapter 7: Forms, Documents & Calendar"
+        - file: chapters/ch08-stripe-plaid.md
+          title: "Chapter 8: Stripe & Plaid"
+    - title: "Part V — The Intelligence Layer"
+      children:
+        - file: chapters/ch09-ai-employees.md
+          title: "Chapter 9: AI Employees"
+        - file: chapters/ch10-reputation.md
+          title: "Chapter 10: Reputation Management"
+        - file: chapters/ch11-reporting.md
+          title: "Chapter 11: Reporting"
+
+site:
+  title: "Vibe Marketing: The Future of Martech"
+  options:
+    logo_text: "Vibe Marketing"
+    logo_url: "/vibe-marketing-martech/"
+  parts:
+    primary_sidebar_footer: primary-sidebar-footer.md
