@@ -46,6 +46,12 @@ Build a lead-magnet funnel that works 168 hours a week — landing pages, forms,
 A deal you cannot see is a deal you cannot close. Master the Kanban pipeline board, stage design, weighted forecasting, and the morning stand-up ritual that top revenue teams run every day.
 :::
 
+:::{grid-item-card} Chapter 4: Workflows — Clone Your Best Employee a Thousand Times
+:link: chapters/ch04-workflows
+:link-type: doc
+Master the automation engine: triggers, actions, branching logic, webhooks, and the twelve workflows every business should have running — from new lead welcome to missed-call recovery.
+:::
+
 <!-- GRID_PLACEHOLDER -->
 
 ::::
