@@ -431,12 +431,7 @@ VibeReach.io organizes funnels as "steps" — each step is one page in the seque
 
 ::::{dropdown} Troubleshooting — Funnel Not Creating
 :icon: wrench
-
-If clicking **+ New Funnel** does nothing, try:
-- Refreshing the browser (Ctrl+R / Cmd+R)
-- Checking that your account has "Sites" access enabled (Settings → My Staff → your user → check Sites permission)
-- Clearing browser cache and cookies for the VibeReach domain
-- Trying a different browser (Chrome is the most stable for the VibeReach builder)
+Refresh the browser, verify your account has Sites permission enabled (Settings → My Staff → your user), clear browser cache, or try Chrome — the most stable browser for the VibeReach builder.
 ::::
 
 ---
@@ -694,11 +689,9 @@ The 11-field form is nearly three times longer than optimal. Last Name is unnece
 
 ### Is the Marketing Funnel Ethical? Persuasion, Autonomy, and the Responsibility of the Marketer
 
-Marketing funnels are designed to reduce friction, create urgency, and guide prospects toward a decision. Critics argue that these techniques manipulate consumer behavior, exploit cognitive biases, and prioritize conversion rates over genuine consumer welfare. Proponents contend that a well-built funnel simply makes it easier for the right person to find the right solution — and that persuasion is not inherently coercive.
+Marketing funnels are engineered to reduce friction, trigger emotion, and guide prospects toward a decision. Critics argue this architecture manipulates consumer behavior and exploits cognitive biases. Proponents contend a well-built funnel simply makes it easier for the right person to find the right solution — and that persuasion is not inherently coercive.
 
-Where do you stand? Is the intentional architecture of a marketing funnel — headlines designed to trigger emotion, forms engineered for maximum compliance, urgency timers, one-time offers that expire — an ethical use of behavioral science? Or does the design of funnels cross a line that traditional sales and advertising did not?
-
-Consider the implications for your own practice: if you build funnels for clients or employers, what ethical guardrails would you apply? Are there offer types, audiences, or tactics that you would refuse? What does responsible funnel marketing look like?
+Where do you stand? Is the intentional design of a funnel — urgency timers, one-time offers, headlines crafted to trigger desire or fear of loss — an ethical use of behavioral science? Or does it cross a line that traditional advertising did not? What guardrails would you apply in your own practice?
 
 > **Discussion Guidelines:** Write a substantive response of at least 200 words addressing the prompt above. Include at least one scholarly or credible citation (journal article, textbook, or authoritative industry report) to support your argument. Then respond to at least TWO peers with substantive feedback — go beyond "I agree" and explain why their perspective adds to or challenges your thinking.
 

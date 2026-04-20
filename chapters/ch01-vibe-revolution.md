@@ -529,7 +529,7 @@ In this lab you will import the course CSV into VibeReach.io, tag contacts by le
 
 **Step 0 — Sample file.** Obtain `lab01-contacts.csv` from `../assets/lab01-contacts.csv` or your instructor. It contains 50 fictional businesses with 13 fields: name, email, phone, company, industry, lead source, city, state, annual revenue, employees, last contact date, and notes.
 
-**Step 1 — Import.** Go to **Contacts → Smart Lists tab → Import Contacts** (downward-arrow icon, top right). Select **Contacts → Next → Upload File** → choose `lab01-contacts.csv` → **Create new contacts → Next**. Map fields: First/Last Name, Email, Phone, City, State, Notes → standard fields; Business Name → **Company Name**; Industry, Lead Source, Annual Revenue, Employees, Last Contact Date → **Custom Fields** (Number for revenue/employees; Date for Last Contact Date).
+**Step 1 — Import.** **Contacts → Smart Lists tab → Import Contacts** (downward-arrow icon, top right). Select **Contacts → Next → Upload File** → choose `lab01-contacts.csv` → **Create new contacts → Next**. Map: First/Last Name, Email, Phone, City, State, Notes → standard fields; Business Name → **Company Name**; Industry, Lead Source, Annual Revenue, Employees, Last Contact Date → **Custom Fields** (Number for revenue/employees; Date for Last Contact Date).
 
 :::{note}
 Create missing custom fields at **Settings → Custom Fields → Contacts → + Add Field** before mapping.
