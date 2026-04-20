@@ -76,6 +76,12 @@ From blank page to signed agreement in minutes — build forms that capture, doc
 The distance between "yes" and "paid" is where most businesses leak revenue. Master Stripe payments, Plaid bank verification, invoices, order forms, subscriptions, and dunning automation inside VibeReach.
 :::
 
+:::{grid-item-card} Chapter 7: Forms, Documents & Calendar
+:link: chapters/ch07-forms-documents-calendar
+:link-type: doc
+Paperwork killed more deals than price ever did. Master smart forms with conditional logic, document intelligence, e-signatures, proposals, and calendar scheduling — and connect them into a single automated flow from first click to signed contract to booked consultation.
+:::
+
 <!-- GRID_PLACEHOLDER -->
 
 ::::
