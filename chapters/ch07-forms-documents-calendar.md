@@ -413,10 +413,10 @@ What this means for humans in the room: technology did not fix the no-show probl
 By the end of this lab, you will have a working form → calendar → confirmation automation: a prospect fills out an application form, lands on a calendar booking page, books a consultation, and receives an automated confirmation email. This flow is achievable on day one of any VibeReach account.
 ```
 
-:::{admonition} Research Note
+```{admonition} What You Will Build
 :class: tip
-Document signing (Sections 7.4 and 7.5) requires additional setup including payment gateway connection and template configuration. The lab focuses on the form → calendar → confirmation flow, which is the foundational sequence every business needs first.
-:::
+This lab takes you through the full closing flow: application form → calendar booking → confirmation email → e-signature document. Every step works on day one. Document signing in VibeReach is drag-and-drop — no special setup required.
+```
 
 ### Step 1: Create the Application Form
 
@@ -477,9 +477,23 @@ Document signing (Sections 7.4 and 7.5) requires additional setup including paym
 4. Publish the workflow.
 5. Re-test: submit the form, book a test appointment, and verify the confirmation email arrives.
 
+### Step 7: Build and Send a Document for E-Signature
+
+Document signing in VibeReach is a drag-and-drop builder — no special configuration required.
+
+1. Navigate to **Payments → Documents & Contracts → + New Document**.
+2. Name it: `Business Funding Consultation Agreement`.
+3. In the document editor, add a **Text block** and type a short one-paragraph service agreement (e.g., "This agreement confirms that [Business Name] is engaging [Your Company] for a Business Funding Consultation on the date booked above. The consultation is provided at no charge and is subject to availability.").
+4. From the **Elements panel** on the right, drag a **Signature** field onto the document — place it at the bottom.
+5. Drag a **Date** field next to the signature line.
+6. Click **Save**.
+7. To send: click **Send Document**, search for your test contact, and click **Send**.
+8. Open the email your test contact received, click the signing link, and complete the signature.
+9. Return to **Documents & Contracts** — verify the document status shows **Signed**.
+
 :::{admonition} Expected Outcome
 :class: success
-A submitted form redirects to a live calendar. The booked appointment appears in VibeReach Calendars. A confirmation email lands in the test inbox within 60 seconds of booking. The contact record in VibeReach shows the appointment attached to the lead created from the form submission.
+A submitted form redirects to a live calendar. The booked appointment appears in VibeReach Calendars. A confirmation email lands in the test inbox within 60 seconds of booking. A signed document is on file in Payments → Documents & Contracts. The contact record shows both the appointment and the signed agreement attached.
 :::
 
 ```{dropdown} Troubleshooting Guide
