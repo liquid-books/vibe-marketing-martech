@@ -523,41 +523,45 @@ The 14 Smart Lists in this case study were not built once and abandoned. They ar
 
 ---
 
-## 1.12 Lab 1: Import a Contact File, Apply Tags, and Build Your First Three Smart Lists
+## 1.12 Lab 1: Import Contacts, Apply Tags, and Build Your First Three Smart Lists
 
-In this lab, you will work through the foundational data operations in VibeReach.io: importing contacts, applying a tag taxonomy, and constructing three Smart Lists that you will use throughout this course.
+In this lab you will import the course CSV into VibeReach.io, tag contacts by lead source, and build three Smart Lists used throughout this course.
 
-:::{important}
-Before beginning this lab, download the sample contact file from the course resources section. The file contains 150 fictional contacts with business type, geographic region, and funding interest data included. Do not use real contact data for lab exercises.
+**Step 0 — Sample file.** Obtain `lab01-contacts.csv` from `../assets/lab01-contacts.csv` or your instructor. It contains 50 fictional businesses with 13 fields: name, email, phone, company, industry, lead source, city, state, annual revenue, employees, last contact date, and notes.
+
+**Step 1 — Import.** Go to **Contacts → Smart Lists tab → Import Contacts** (downward-arrow icon, top right). Select **Contacts → Next → Upload File** → choose `lab01-contacts.csv` → **Create new contacts → Next**. Map fields: First/Last Name, Email, Phone, City, State, Notes → standard fields; Business Name → **Company Name**; Industry, Lead Source, Annual Revenue, Employees, Last Contact Date → **Custom Fields** (Number for revenue/employees; Date for Last Contact Date).
+
+:::{note}
+Create missing custom fields at **Settings → Custom Fields → Contacts → + Add Field** before mapping.
 :::
 
-### Lab Objectives
+Check **"Don't import data for unmapped columns" → Next → Import**. Confirm **All Contacts** shows **50 records**.
 
-By the end of this lab, you will be able to:
+**Step 2 — Tag by lead source.** In **All Contacts**, for each source: **Advanced Filters → Lead Source | is | [value] → Apply** → header checkbox → **Actions → Add Tag** → tag → **Confirm**: Referral → `referral` · Paid Ads → `paid-ads` · Website Form → `website-form` · Inbound Call → `inbound-call` · Cold Outreach → `cold-outreach`. Confirm one tag is visible on any contact.
 
-1. Import a CSV contact file into VibeReach.io with field mapping
-2. Apply bulk tags to segmented contact groups
-3. Build and validate three functional Smart Lists
+**Step 3 — Smart List #1.** **Smart Lists tab → + Smart List**. Name: `Lab — Hot Leads: Contacted Last 7 Days`. Advanced Filters: **Last Contact Date | is | Last 7 days → Apply → Save**. Updates automatically.
 
-### Step-by-Step Instructions
+**Step 4 — Smart List #2.** Name: `Lab — High Revenue Prospects`. Advanced Filters: **Annual Revenue | is greater than | 1000000 → Apply → Save** (~25 contacts expected).
 
-**Step 1: Prepare your CSV.** Open the sample contact file and verify these columns are present: First Name, Last Name, Email, Phone, Business Type, State, Funding Interest. Save as CSV.
+**Step 5 — Smart List #3.** Name: `Lab — Uncontacted Referrals`. Advanced Filters: **Tags | contains | referral → Apply** → **+ Add Nested Filter** *(AND)* → **Last Contact Date | is empty → Apply → Save**.
 
-**Step 2: Import.** Navigate to **Contacts → Import → CSV Import**. Upload your file and use the field mapping interface to connect each CSV column to the corresponding Contact field (First Name, Email, Phone, and custom fields for Business Type, State, and Funding Interest Range). Click **Import**.
+:::{important}
+Lab complete: ✅ 50 contacts imported · ✅ each contact has a lead-source tag · ✅ three Smart Lists saved with live counts
+:::
 
-**Step 3: Apply tags by bulk action.** Navigate to **Contacts → All Contacts**. Filter by Business Type = "Restaurant," select all results, click **Bulk Actions → Apply Tag**, and apply `industry:restaurant`. Repeat for each business type in the data set.
+:::{dropdown} Troubleshooting
+**0 contacts imported:** Confirm `.csv` format, header row present, and Email or Phone mapped.
 
-**Step 4: Build Smart List 1 — Active Restaurant Contacts.** Navigate to **Contacts → Smart Lists → Create New**. Name it `Lab — Restaurants Active`. Add: Tag contains `industry:restaurant` AND Date Added is within 365 days. Save and verify.
+**Custom field missing:** Create it at **Settings → Custom Fields → Contacts** (Number or Date type) before importing.
 
-**Step 5: Build Smart List 2 — High Funding Interest.** Create `Lab — High Funding Interest` with one condition: Custom Field: Funding Interest Range equals `$100K+`.
+**Smart List returns 0:** Last Contact Date must be YYYY-MM-DD format. Confirm tags are applied. For "Last 7 days," test with **is not empty** first.
 
-**Step 6: Build Smart List 3 — Southeast Prospects.** Create `Lab — Southeast States` with OR logic: State equals `FL` OR State equals `GA` OR State equals `SC`.
-
-**Validation:** Verify that the total contact count across your three lists is less than 150. Some contacts will appear in multiple lists — this is expected.
+**Actions menu absent:** Select contacts via header checkbox first.
+:::
 
 ### Lab Reflection
 
-How would you build a fourth Smart List capturing the intersection of two existing segments — for example, restaurant contacts in the Southeast? Write out the filter logic before building, then verify your prediction.
+Design a fourth Smart List — high-revenue uncontacted referrals (intersection of Smart Lists #2 and #3). Write the AND filter logic before building, then verify your count.
 
 ---
 
