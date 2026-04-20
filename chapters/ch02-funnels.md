@@ -360,7 +360,17 @@ The shift was not technical. Maria used a template she modified in an afternoon.
 This lab walks you through building a complete lead-magnet funnel inside VibeReach.io. You will create a landing page, configure an opt-in form, set up a thank-you page, connect a workflow trigger, and test the funnel end to end. Estimated time: 60–90 minutes.
 :::
 
-### Step 0 — Plan Your Funnel Before You Build
+### Step 0 — Download Your Lab Resources
+
+This lab uses a ready-made lead magnet you will deliver to every new opt-in. Download it now and save it to your desktop — you will link to it from your funnel's thank-you page.
+
+📥 **[Download lab02-mca-funding-checklist.md](https://raw.githubusercontent.com/liquid-books/vibe-marketing-martech/main/assets/lab02-mca-funding-checklist.md)**
+
+This is the "Free MCA Funding Checklist" — a 7-step qualification guide for business owners seeking merchant cash advance funding. Review it before building so you understand the offer you are marketing.
+
+---
+
+### Step 1 — Plan Your Funnel Before You Build
 
 Before touching the platform, document your funnel blueprint. Building without a plan produces pages that look busy but do not convert.
 
