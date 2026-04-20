@@ -1,0 +1,19 @@
+Pipeline Name,Stage Number,Stage Name,Stage Description,Win Probability (%),Typical Time in Stage (Days),Required Action to Advance,Lost Reason (if applicable)
+Sales Pipeline,1,New Lead,Contact just entered the system — not yet contacted,5,1,Make first contact attempt (call or SMS),
+Sales Pipeline,2,Contacted,Reached the prospect — initial conversation had,15,2,Qualify with BANT questions (Budget/Authority/Need/Timeline),Not interested / wrong number
+Sales Pipeline,3,Qualified,Prospect confirmed need and basic eligibility,35,3,Send proposal or book follow-up call,Not qualified / no need
+Sales Pipeline,4,Proposal Sent,Offer or quote delivered — awaiting decision,50,5,Follow up every 48 hours until decision,
+Sales Pipeline,5,Negotiating,Prospect is engaged but pushing back on terms/price,65,3,Handle objections and confirm decision timeline,Price too high / chose competitor
+Sales Pipeline,6,Verbal Commit,Prospect said yes — paperwork pending,80,2,Send contract / collect signature,Fell through / went cold
+Sales Pipeline,7,Closed Won,Deal signed and funded,100,0,Trigger onboarding workflow + request review,
+Sales Pipeline,8,Closed Lost,Deal did not close,0,0,Tag with lost reason + add to re-engagement sequence,
+Onboarding Pipeline,1,Welcome Sent,New client received welcome email/SMS,100,1,Schedule kickoff call,
+Onboarding Pipeline,2,Kickoff Completed,Initial setup call done,100,3,Complete platform setup checklist,
+Onboarding Pipeline,3,Setup in Progress,Client configuring their account,100,5,Check in on progress + offer support,
+Onboarding Pipeline,4,First Win,Client achieved their first result (first lead / first booking),100,7,Celebrate + document result + ask for referral,
+Onboarding Pipeline,5,Fully Onboarded,Client is self-sufficient and active,100,0,Move to Success Pipeline,
+Renewal Pipeline,1,Renewal Eligible,Client approaching contract end (60 days out),50,30,Send renewal offer + schedule retention call,
+Renewal Pipeline,2,Renewal Presented,Renewal offer sent and discussed,65,14,Follow up every 5 days,
+Renewal Pipeline,3,Renewed,Client signed renewal agreement,100,0,Update billing + celebrate + note in contact record,
+Renewal Pipeline,4,At Risk,Client has not responded or expressed doubts,20,7,Escalate to senior rep + offer incentive,
+Renewal Pipeline,5,Churned,Client did not renew,0,0,Add to win-back campaign (60-day delay),
