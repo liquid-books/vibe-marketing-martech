@@ -52,6 +52,18 @@ A deal you cannot see is a deal you cannot close. Master the Kanban pipeline boa
 Master the automation engine: triggers, actions, branching logic, webhooks, and the twelve workflows every business should have running — from new lead welcome to missed-call recovery.
 :::
 
+:::{grid-item-card} Chapter 6: Conversations — One Inbox to Rule Them All
+:link: chapters/ch06-conversations
+:link-type: doc
+Context-switching is not multitasking — it is just slower. Master the unified inbox, snippets, internal notes, conversation AI, trigger links, and first response time metrics that turn a fragmented communication stack into a single closer's cockpit.
+:::
+
+:::{grid-item-card} Chapter 5: The Phone System — A Call Center in Your Pocket
+:link: chapters/ch05-phone-system
+:link-type: doc
+Every missed call is a missed mortgage payment for someone. Master VoIP, IVR menus, power dialers, voicemail drop, whisper/barge coaching, missed-call text-back, and TCPA compliance.
+:::
+
 <!-- GRID_PLACEHOLDER -->
 
 ::::
