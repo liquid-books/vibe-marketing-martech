@@ -40,4 +40,12 @@ How one platform, every touchpoint, and intelligent agents are rewriting the rul
 Build a lead-magnet funnel that works 168 hours a week — landing pages, forms, offers, thank-you pages, A/B testing, and UTM discipline from day one.
 :::
 
+:::{grid-item-card} Chapter 3: Pipelines — Your Daily Command Center
+:link: chapters/ch03-pipelines
+:link-type: doc
+A deal you cannot see is a deal you cannot close. Master the Kanban pipeline board, stage design, weighted forecasting, and the morning stand-up ritual that top revenue teams run every day.
+:::
+
+<!-- GRID_PLACEHOLDER -->
+
 ::::
