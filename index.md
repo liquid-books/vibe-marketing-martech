@@ -28,4 +28,16 @@ This book is a work in progress. New chapters will be added over time.
 Planting Your Digital Flag — DNS, domains, email authentication, and the technical foundation every marketer must own.
 :::
 
+:::{grid-item-card} Chapter 1: The Vibe Revolution
+:link: chapters/ch01-vibe-revolution
+:link-type: doc
+How one platform, every touchpoint, and intelligent agents are rewriting the rules of growth marketing.
+:::
+
+:::{grid-item-card} Chapter 2: Funnels — The Salesperson Who Never Sleeps
+:link: chapters/ch02-funnels
+:link-type: doc
+Build a lead-magnet funnel that works 168 hours a week — landing pages, forms, offers, thank-you pages, A/B testing, and UTM discipline from day one.
+:::
+
 ::::
