@@ -757,3 +757,29 @@ Consider both perspectives. Is technical fluency in areas like DNS and email aut
 4. Consider the professional vs. free email question from Section 0.6. Can you recall a time when receiving an email from a free email address changed your perception of the sender? What does that experience tell you about the signals your own email address sends to recipients?
 
 5. DMARC reports give domain owners visibility into who is attempting to send email using their domain. Why might this information be valuable beyond just email deliverability — for example, in the context of brand protection, competitive intelligence, or fraud prevention?
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+You just learned the unsexy stuff that makes every campaign either fly or die. The businesses bleeding leads from their domain setup are not dumb — they just never had to stare this directly at the plumbing. Now you do. Time to fix it.
+
+**1. Audit your domain's authentication right now.**
+Go to [MXToolbox.com](https://mxtoolbox.com) and run a free check on your sending domain. Does SPF pass? DKIM? DMARC? Log into your GHL account → **Settings → Email Services** and confirm your connected domain shows "Verified." If anything fails, don't skip it — a broken authentication record is a silent campaign killer.
+
+**2. Check your sending address.**
+What email address do your GHL campaigns send from? If it's a free Gmail or Yahoo address, stop. Log into **Settings → Email Services** and set up a custom domain address (yourname@yourbusiness.com). Then run an SPF/DKIM test to confirm it's authenticated. Write down what you changed and what it was before.
+
+**3. Map your DNS records like a pro.**
+Log into your domain registrar (GoDaddy, Namecheap, Cloudflare — wherever you registered your domain). List every DNS record currently on your domain. Which ones are for email (MX, SPF, DKIM)? Which are for your website (A, CNAME)? Are there any old or conflicting records that should be cleaned up? A ten-minute audit now saves a week of troubleshooting later.
+
+**4. Set up DMARC if you haven't already.**
+Most small businesses skip DMARC. Don't be most businesses. Add a basic DMARC TXT record to your domain starting with `p=none` (monitoring mode — it will report without blocking). In 30 days, check the aggregate reports. Who else is sending from your domain? Are you being spoofed?
+
+**5. Create your "send from" email for every client location or brand.**
+If you run an agency or manage multiple sub-accounts in GHL, each one needs its own authenticated sending domain. Make a list of every sub-account you manage and its current sending email status. Mark which ones still need domain authentication set up and give yourself a deadline.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Set up a DMARC policy with `p=quarantine` on your primary domain and connect it to a DMARC reporting tool like Postmark's DMARC Digests (free) or Dmarcian. Let it run for two weeks, then analyze your first report. What percentage of your email is passing authentication? Is anyone spoofing your domain? Write a 200-word summary of what you found and what you did about it.
+:::

@@ -652,3 +652,29 @@ Signing Order
 ---
 
 *End of Chapter 7.*
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+Your closing process is either moving at the speed of trust or the speed of a fax machine. This chapter gives you the tools to close the gap between "yes" and signed. Now apply them to your real business.
+
+**1. Audit the current time between "yes" and paid/signed.**
+Think of the last five deals you closed. How many hours — or days — elapsed between when the prospect verbally agreed and when you received a signature or payment? Write the number down. That gap is the vulnerability your competitors are exploiting. Every hour you take to send paperwork is an hour the prospect talks themselves out of it or finds another option.
+
+**2. Build a smart intake form with conditional logic.**
+In GHL → **Sites → Forms → + New Form**, build a multi-step form for your primary service inquiry. Add conditional logic: if the prospect selects "I need help with X," show them fields relevant to X; if they select "Y," show different fields. Add at least one file upload field (e.g., "Upload your last 3 months of bank statements" for financial services, or "Upload your logo" for marketing agencies). Set the form to create/update a contact on submission and apply a tag (`intake-form-completed`). Embed it in your intake funnel page.
+
+**3. Create a proposal or contract template in GHL Documents.**
+In GHL → **Payments → Documents & Contracts → + New Document**, build a professional template for your most common agreement. Add merge fields for contact name, business name, and service details so it auto-populates from the contact record. Add an e-signature field. Send it to yourself as a test — sign it — and confirm the signed document appears back in the contact record. This is the workflow that replaces your PDF email attachment forever.
+
+**4. Set up your calendar and configure reminder sequences.**
+In GHL → **Calendars → + New Calendar**, configure a calendar for your primary appointment type (discovery call, consultation, etc.). Set available hours, buffer time between appointments, and max bookings per day. Then in **Automation → Workflows**, build a reminder sequence: confirmation email immediately on booking, reminder email 24 hours before, SMS reminder 1 hour before. Publish it. Book a test appointment with your own email. Did the reminders fire?
+
+**5. Connect your calendar to a funnel thank-you page.**
+In your primary funnel's thank-you page (GHL → **Sites → Funnels** → your funnel → Thank You step), add a calendar embed widget. Now when someone opts in, the thank-you page immediately offers them a chance to book a call. This is the "strike while the iron is hot" close — converting a warm opt-in into a booked appointment before they ever leave your funnel.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Build a fully automated intake-to-signed workflow: Form submission → workflow triggers → document auto-created and sent via GHL Documents → contact receives email with signing link → on signing, workflow fires → opportunity moves to "Contract Signed" stage → calendar booking link sent automatically. Time yourself building this end-to-end sequence. Once it's live, run a real client through it and note every friction point they experience. Each friction point is a refinement opportunity. Within 90 days of running deals through this system, you should see your average time-to-signed drop by 50% or more.
+:::

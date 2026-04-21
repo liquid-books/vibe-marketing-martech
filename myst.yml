@@ -56,7 +56,11 @@ project:
         - file: chapters/ch10-reputation.md
           title: "Chapter 10: Reputation Management"
         - file: chapters/ch11-reporting.md
-          title: "Chapter 11: Reporting"
+          title: "Chapter 11: Reporting & Analytics"
+    - title: "Part VI — The Visibility Layer"
+      children:
+        - file: chapters/ch12-social.md
+          title: "Chapter 12: Social Media & Social Planner"
 
 site:
   title: "Vibe Marketing: The Future of Martech"

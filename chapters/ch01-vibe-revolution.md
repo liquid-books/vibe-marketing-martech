@@ -736,3 +736,29 @@ The re-permission campaign itself must be structured carefully — a single, cle
 
 **Workflow**
 : One of the Three Pillars; a configured sequence of triggers, conditions, and actions that automates the system's response to contact behavior without human intervention.
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+You just got the full philosophical foundation — Contacts as universe, Smart Lists as living segments, the Four Heartbeats, the Three Pillars. Now make it real. The difference between someone who reads this and someone who uses it is what happens in the next 30 minutes.
+
+**1. Map your own Four Heartbeats.**
+Open a blank doc or grab a napkin. For your actual business (or one you know well), write down two specific activities for each heartbeat: Attract, Engage, Convert, Retain. Don't use generic examples — name the actual channels, tools, or actions you use today. Now honestly score each heartbeat 1–10: How systematized is it? Where's the biggest gap? That gap is your highest-leverage automation target for this course.
+
+**2. Audit your Frankenstein Stack.**
+List every software tool your business (or your client's business) uses to manage the customer journey from first touch to retained customer. Count them. For each tool, ask: Does it share data automatically with the others, or does someone have to manually move information? Circle every manual data transfer — each circle is a revenue leak.
+
+**3. Design your tag taxonomy.**
+Before you apply a single tag in GHL, design the categories. Open GHL → **Contacts** → pick any contact → click into the Tags field. Look at existing tags if any exist. Now design a taxonomy with at least four categories using the colon prefix convention: `source:`, `status:`, `industry:`, and one category specific to your business. Write it out. This becomes your team's tagging standard.
+
+**4. Build three Smart Lists that would actually run your morning.**
+Think about what three contact segments you check manually every day or week. Maybe it's "new leads from this week," "customers up for renewal," or "prospects who went cold." In GHL → **Contacts → Smart Lists → + New Smart List**, build those three lists right now using filters that match your real criteria. Name them clearly. Bookmark them. If they're accurate, you've just automated your Monday morning report.
+
+**5. Identify your single biggest Contact record gap.**
+Open five random contact records in your GHL account. What data is missing that would change how you'd communicate with them? Is it industry? Budget? Last purchase date? Design one custom field that would fill the most important gap. Go to **Settings → Custom Fields → Contacts → + Add Field** and create it.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Build the "segmentation transformation" from the case study for your own database. Export your contact list, identify every unique lead source represented, build a tag for each one, and apply tags via bulk import or GHL's bulk action tool. Then build a Smart List for each source segment. Run a count — which source has produced the most contacts? Which has the highest activity rate? You now have the foundation of a segmented database that will make every future campaign more effective.
+:::

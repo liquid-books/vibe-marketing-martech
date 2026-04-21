@@ -777,3 +777,29 @@ Trigger for Renewal: No box opened / survey not submitted within 30 days of deli
 
 **Win probability**
 : The estimated likelihood (as a percentage) that an opportunity will close successfully, typically assigned at the stage level and calibrated over time using historical close rate data.
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+A pipeline that lives in someone's head is not a pipeline. It's anxiety with ambition. Today you move your sales process from mental real estate into VibeReach — visible, measurable, and manageable.
+
+**1. Map your actual sales stages before touching GHL.**
+On paper, write down every stage a deal goes through in your business from "brand new lead" to "closed." Be specific — not just "New Lead" and "Closed Won," but every meaningful handoff point in between. A dental practice might have: Inquiry → Consultation Booked → Consultation Attended → Treatment Plan Sent → Treatment Plan Accepted → Scheduled → Completed. A consultant might have: Discovery Call → Proposal Sent → Proposal Reviewed → Contract Signed → Onboarded. Write yours out. Count the stages. If you have more than eight, consider whether some should be combined.
+
+**2. Assign win probabilities to each stage.**
+Next to each stage you just mapped, write the percentage of deals that historically make it from that stage to "Closed Won." If you don't have clean data yet, estimate based on experience. New Lead = 15%. Proposal Sent = 40%. Contract Signed = 90%. These numbers become your weighted pipeline forecast. In GHL → **Opportunities → Pipelines**, you'll configure these probabilities at the stage level.
+
+**3. Build your pipeline in GHL right now.**
+Log into your GHL account. Go to **Opportunities → Pipelines → + Add Pipeline**. Name it after your primary offer or service line. Add the stages you mapped in Step 1. Set win probabilities. Save. Then create three test opportunities — one in the early stage, one mid-funnel, one late-stage — with real deal values from your business. Look at the board. That's your business as a visual system. Does it feel accurate?
+
+**4. Identify your top five "stale" deals.**
+Every business has deals that are stuck — sitting in the same stage for weeks with no movement. In GHL → **Opportunities**, filter by pipeline stage and sort by "Last Stage Change" ascending. Find the five oldest. For each one: Is it still a real opportunity? If yes, what's the one action that would move it forward today? Create a task for each one. If no, close it out as "Lost" with a reason noted. A clean pipeline is more accurate than a full one.
+
+**5. Set up stage-based automation for your most important handoff.**
+Identify the one pipeline stage transition where deals most often stall because of a human delay — usually "Proposal Sent" waiting for a follow-up. In GHL → **Automation → Workflows**, build a simple workflow: Trigger = Opportunity Stage Changed to [that stage]. Action = Create Task for the assigned rep: "Follow up on proposal within 24 hours." Save and publish. You just eliminated the most common pipeline bottleneck in most service businesses.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Calculate your true pipeline velocity: average deal value × win rate ÷ average sales cycle length (in days). If your average deal is $3,000, your overall close rate is 25%, and your average cycle is 30 days, your pipeline velocity is $25/day. Now look at your current pipeline total. Divide by your velocity to estimate how many days until that revenue closes. Compare that number to your actual revenue targets. Is the pipeline big enough? This exercise often reveals that the issue isn't close rate — it's lead volume. Knowing that changes where you invest next.
+:::

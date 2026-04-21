@@ -735,3 +735,29 @@ Note: This calculation assumes all other variables remain equal. In practice, li
 
 **A2P Registration**
 : The formal process of registering a business brand and messaging campaign with carriers to enable commercial SMS messaging at scale.
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+The phone system chapter is the one where people nod along, then do nothing. Don't be that person. Every day your GHL number isn't provisioned is another day your best leads are hitting voicemail and calling someone else.
+
+**1. Provision your GHL phone number today.**
+Log into GHL → **Settings → Phone Numbers → + Add Number**. Choose a local area code that matches your primary market (or a toll-free number if you serve nationally). Select the number, complete the purchase, and verify it appears in your account. This takes under five minutes and costs a few dollars per month. If you're on a trial or agency account, provision a number in the sub-account you're working in for this course.
+
+**2. Complete your A2P 10DLC brand registration.**
+In GHL → **Settings → Phone Numbers → A2P Registration**, fill out your Brand Registration form: legal business name, EIN/tax ID, business type, website, and business contact info. Submit it. This is not optional if you want to send automated SMS — carriers will throttle or block unregistered numbers. The process takes 1–3 business days for brand approval. Start it now so it doesn't block your Chapter 5 labs.
+
+**3. Build your first IVR menu.**
+In GHL → **Settings → Phone Numbers**, click on your provisioned number → **Call Flow → IVR (Phone Tree)**. Create a simple two-option menu: "Press 1 for sales. Press 2 for support." Route Option 1 to your personal number (or the sales team). Route Option 2 to a voicemail. Record a short, professional greeting (under 20 seconds). Save. Call your GHL number from your mobile phone and test it. Does the IVR answer? Do the options route correctly?
+
+**4. Activate missed-call text-back.**
+If you built the workflow in Chapter 4's "Your Turn" section, activate it now that your number is provisioned. If you skipped it, go to **Automation → Workflows → + New Workflow**: Trigger = Call Status → Missed → Action = Send SMS with a warm response message. Publish it. Then miss-call your own GHL number from another phone and wait. Did the SMS arrive within 60 seconds? If not, check that the trigger filter matches your phone number.
+
+**5. Set up your business hours and Do Not Disturb rules.**
+In GHL → **Settings → Business Info**, set your business hours. In your workflows that send SMS, add a **Wait** step configured to "Send only during business hours." This prevents automated texts from arriving at 2 AM, which generates complaints and hurt your sender reputation. Check every active workflow that sends SMS and verify this setting is in place.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Record a professional voicemail drop for your top follow-up campaign. Write a 30-second script that sounds personal, not robotic — address the recipient by first name (using merge field {{contact.first_name}}), reference the specific thing they inquired about, and give them one clear next step. Record it in a quiet room with a good microphone (even a modern smartphone mic is fine). Upload it to GHL → **Marketing → Voicemail Drops** and attach it to a workflow action. Then A/B test: run 50 contacts through a sequence that calls + leaves voicemail versus 50 who get only email follow-up. Compare reply rates at 72 hours.
+:::

@@ -614,3 +614,29 @@ Consider: A subscription customer's payment fails because they lost their job an
 **Tokenization:** The process of replacing sensitive card data with a randomly generated token that represents the card without exposing its actual number.
 
 **1099-K:** IRS tax form issued by payment processors to merchants who exceed reporting thresholds; required for accurate tax reporting.
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+Money sitting in a "yes" that hasn't been invoiced yet is not revenue — it's hope. This chapter closes the distance between agreement and deposit. Now apply it to your actual offers.
+
+**1. Connect your Stripe account to GHL.**
+Log into GHL → **Settings → Payments → Integrations → Stripe**. Click **Connect with Stripe**. You'll be redirected to Stripe's OAuth flow — log in with your Stripe credentials and authorize the connection. Return to GHL and confirm the integration shows "Connected." If you don't have a Stripe account yet, create one at stripe.com (free to set up, pay-per-transaction). This connection is the foundation of everything else in this chapter.
+
+**2. Create your first product or service in GHL.**
+In GHL → **Payments → Products → + New Product**, create your primary offer: name, description, price, and type (one-time or recurring). Set up pricing tiers if applicable. For a subscription offer, configure the billing interval (monthly, quarterly, annual). Save it. Then generate a quick payment link: **Payments → Payment Links → + New Payment Link** → select your product → copy the link. Test it with a $1 dummy charge to yourself to confirm the full payment flow works end-to-end.
+
+**3. Build an automated invoice workflow.**
+In GHL → **Automation → Workflows**, create a workflow: Trigger = Opportunity Stage Changed → filter to your "Proposal Accepted" or "Contract Signed" stage. Action = **Send Invoice** (select your product). The invoice should arrive in the contact's email within seconds of the stage change. Test it by manually moving a test contact's opportunity to that stage. Did the invoice fire? Did it appear in the contact's timeline? Did it show up in **Payments → Invoices**?
+
+**4. Set up your dunning sequence.**
+In GHL → **Automation → Workflows**, build the Payment Failed recovery workflow: Trigger = Payment Failed → Action 1: Send Email to contact ("Your payment didn't go through — here's how to update your card") with a payment link → Wait 3 days → If/Else: Check if payment is now current → YES: End → NO: Create Task for billing team + Send second email. This workflow runs without human intervention and recovers a significant percentage of failed charges before they become cancellations.
+
+**5. Create an order form embedded in your funnel.**
+In GHL → **Payments → Order Forms → + New Order Form**, build a checkout form for your core offer. Add your product, configure the layout (one-step or two-step checkout), add an order bump (a secondary product offered at checkout). Then embed the order form URL as a step in your existing funnel — replacing the old "contact us" step with a direct checkout step. Now your funnel ends in a payment, not a conversation.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Calculate your revenue leakage from failed payments over the last 90 days. In GHL → **Payments → Transactions**, filter by "Failed." Total the attempted charge amounts. That number is your dunning opportunity — the revenue that a properly configured recovery sequence would have captured. Now check: Do you have a dunning workflow live? If not, build one today and tag it with the date you activated it. In 90 days, pull the same failed payment report and compare. Document the delta. That number is the direct ROI of a single afternoon's automation work.
+:::

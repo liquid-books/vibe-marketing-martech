@@ -693,3 +693,29 @@ Where do you stand? Is the intentional design of a funnel — urgency timers, on
 **Value Ladder:** The ascending sequence of offers — from free to high-ticket — defining the customer journey and path toward increasing lifetime customer value.
 
 **Workflow:** An automated action sequence triggered by a specific event (such as form submission), executing tagging, email delivery, or CRM updates without manual intervention.
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+You just learned how a funnel works — the anatomy, the psychology, the A/B testing, the UTM structure. Now stop theorizing and go build one for your actual offer. A funnel that doesn't exist converts at exactly zero percent.
+
+**1. Map your current lead capture process.**
+Right now, before opening GHL, write down how a brand-new stranger becomes a contact in your business. Do they fill out a form on your website? Call a number? DM you on Instagram? For each method: Is there a thank-you page? Does it trigger any automation? Does the contact get tagged? Most businesses discover they have three or four entry points with zero automation attached. Pick the highest-traffic one. That's your funnel rebuild target.
+
+**2. Define your lead magnet before you build the page.**
+A funnel is only as strong as what it's offering. In GHL → **Sites → Funnels**, before clicking "+ New Funnel," write down: What is the specific thing someone gets in exchange for their email? Why would your ideal customer want it badly enough to give up their contact info? Is it a checklist, a calculator, a free audit, a guide, a webinar seat? If you can't answer "my ideal customer wants this because ___" in one sentence, don't build the funnel yet — sharpen the offer first.
+
+**3. Build your opt-in page headline using the Four-Part Formula.**
+Draft at least three headline options for your landing page using this structure: [Specific Result] + [Timeframe] + [Without Pain Point] + [For Audience]. Example: "Get Your First 10 Qualified Leads in 14 Days — Without Running a Single Ad — Even If Your Pipeline Is Completely Dry." Write all three. Pick the sharpest one. That headline goes above the fold on your funnel page.
+
+**4. Set up UTM parameters for your top traffic source.**
+In Google's Campaign URL Builder (or GHL's built-in UTM tool), create a tracked URL for the funnel you're building or your current opt-in page. Use: `utm_source` = the platform (facebook, google, email), `utm_medium` = the type (paid, organic, newsletter), `utm_campaign` = the campaign name. Save this URL. Every link you post for this funnel should use it so attribution is clean from day one.
+
+**5. Create your thank-you page and set a next-step action.**
+A thank-you page that just says "Thanks, check your email!" is a wasted opportunity. In your GHL funnel, build or update your thank-you page with: (a) confirmation of what they'll receive, (b) a specific next step (book a call, watch a video, join a group), and (c) a soft introduction to your story or credibility. The thank-you page is the second most-viewed page in your funnel — treat it like it matters.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Set up an A/B test on your headline. In GHL → **Sites → Funnels**, duplicate your landing page step and change only the headline. Run both versions with equal traffic for two weeks. Track opt-in rate for each variant. Document which won and by how much. Then apply the winning headline, run another test on your CTA button copy, and repeat. This compounding optimization process is how top marketers squeeze 40%+ more leads from the same traffic without spending a dollar more on ads.
+:::

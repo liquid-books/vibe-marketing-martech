@@ -975,3 +975,29 @@ Smart List
 ---
 
 *Chapter 5 covers The Phone System: provisioning your VibeReach number, A2P 10DLC registration, call routing, voicemail drops, and the full SMS automation library — including adding SMS back into the New Lead Welcome Sequence you built in this lab.*
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+You just learned the assembly line. Now run something down it. The most dangerous thing you can do with this chapter is close it and go back to manually following up with leads. Build one workflow today — even an imperfect one — and improve it next week.
+
+**1. Identify your single biggest manual follow-up leak.**
+Think about the last five leads your business dropped. Not "maybe dropped" — actually, definitively lost because nobody followed up. What was the trigger event that should have kicked off a response? A form submission? A missed call? An email that went unanswered? That trigger event is where your first workflow goes. Write it down before opening GHL.
+
+**2. Sketch your workflow on paper before building it.**
+Pick any of the 12 essential workflows from Section 4.10. Before logging into GHL, draw the trigger → conditions → actions on paper. What fires first? What's the wait time? Where does the If/Else branch? What does the YES path do? The NO path? What tag signals that the goal was achieved? Sketching first eliminates 80% of the rebuild time that comes from building without thinking.
+
+**3. Build and publish the Missed-Call Text-Back workflow.**
+Log into GHL → **Automation → Workflows → + New Workflow**. Trigger: **Call Status** → filter: Status = Missed. Action: **Send SMS** — write a warm, human message that says you missed them and want to help. Publish it. This takes under 10 minutes and, as the case study showed, can recover five figures in a single quarter. If your number isn't provisioned yet, save it as a draft and come back the moment Chapter 5's setup is complete.
+
+**4. Add a Goal to your Lab 4 workflow.**
+Open the New Lead Welcome Sequence you built in Lab 4. In the workflow settings (gear icon), find **Goal** and set it to "Appointment Booked." Now any lead who books during the sequence automatically skips to the post-booking path instead of continuing the follow-up sequence. Save and republish. This one change stops you from sending "Are you still interested?" emails to people who already said yes.
+
+**5. Read five execution logs from any active workflow.**
+In GHL → **Automation → Workflows**, open any active workflow and click the **History** tab. Pick five contacts at random. For each one, expand the full execution log. Did every step execute? Were there any Skipped or Failed steps? What does the wait step timing look like — are messages going out at 3 AM? Fix one thing you find in those five logs.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+Build the complete 12-workflow system from Section 4.10 — one per day for 12 business days. After each workflow is live for a week, pull the execution log and calculate: How many contacts went through it? How many reached the goal? What percentage of Wait+Check branches went to the "did not act" path (meaning the automation had to do the human's job)? After 12 weeks, you'll have a fully automated front-office and a clear view of which workflows are doing the most work for you.
+:::

@@ -760,3 +760,29 @@ For a business type of your choosing (restaurant, real estate agent, fitness coa
 ---
 
 *End of Chapter 6*
+
+---
+
+## 🎯 Your Turn: Apply It to Your Business
+
+Every channel you manage outside the unified inbox is a tax on your focus. Today you close the tabs and route everything through one command center. Your response times will drop. Your missed conversations will drop. Your close rate will climb.
+
+**1. Connect every active communication channel to GHL Conversations.**
+Log into GHL → **Settings → Integrations**. Connect each platform you actually use: Facebook Page (via Meta Business Suite), Instagram (via the same Meta connection), Google Business Profile, WhatsApp Business (if applicable). Then go to **Settings → Email Services** and confirm your email is connected. Check **Conversations** — do you see messages from all channels in one inbox? Any missing channel is a blind spot in your customer communication.
+
+**2. Build your first Snippet Library.**
+Think about the five questions you or your team answers most often. In GHL → **Conversations → Snippets → + New Snippet**, build a saved reply for each one. Give each snippet a short, searchable trigger name (e.g., "pricing," "hours," "booking," "refund"). Test them in the Conversations inbox by typing "/" — does the snippet autosuggest appear? Are they accurate and on-brand? A snippet library saves 20–30 minutes per day for any team that handles more than 20 conversations.
+
+**3. Set up conversation assignment rules.**
+In GHL → **Settings → Conversations → Routing Rules** (or via workflow: Trigger = New Inbound Message → Action = Assign to User), define who handles what. If you have more than one team member, create channel-based or keyword-based routing. New Facebook DMs → assign to the social media manager. Inbound email with "billing" in subject → assign to accounts. This ensures every conversation has a clear owner within seconds of arrival.
+
+**4. Measure your current First Response Time.**
+In GHL → **Reporting → Conversations Report**, pull the last 30 days of data. What is your average First Response Time across all channels? Industry benchmark: under 5 minutes for high-intent channels (SMS, phone), under 1 hour for email. If your FRT is over these benchmarks, identify which channel is lagging and build a workflow alert that notifies the assigned team member if a conversation goes unresponded for more than 15 minutes.
+
+**5. Test the web chat widget on your funnel or website.**
+In GHL → **Sites → Chat Widget**, configure and grab the embed code for your website or GHL funnel. Install it. Open your site in a private browser window and send a test message. Does it arrive in Conversations? Who does it assign to? Does the contact get automatically created? Verify the full loop from widget submission to CRM contact creation to conversation assignment.
+
+:::{admonition} 🏋️ Stretch Challenge
+:class: tip
+For one full business week, run a "zero tab" experiment: handle all customer communication exclusively through GHL Conversations — no separate Gmail, no Facebook app, no Instagram DMs. At the end of the week, measure: How many conversations did you handle? What was your FRT? Did you miss anything that wouldn't have been caught in Conversations? Document the gaps and fix the routing or channel connections that caused them. This exercise almost always reveals one disconnected channel that's been leaking customer messages silently for months.
+:::
