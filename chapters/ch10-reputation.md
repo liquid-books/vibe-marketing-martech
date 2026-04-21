@@ -38,6 +38,14 @@ GHL's Reputation Management module eliminates the awkwardness and the forgetting
 
 ## 10.2 Why Reviews Are the New Word of Mouth — And Why You're Leaving Money on the Table
 
+:::{figure} ../images/ch10-star-rating-revenue.png
+:label: fig-ch10-star-rating-revenue
+:alt: Bar chart showing correlation between star rating and revenue indexed to baseline at 4 stars
+:width: 100%
+:align: center
+Harvard Business School research on the star rating–revenue relationship: each full star improvement correlates with a 5–9% revenue increase for local service businesses.
+:::
+
 The case for investing in reputation management is not emotional. It is financial.
 
 BrightLocal's 2025 Local Consumer Review Survey — one of the most comprehensive annual studies on consumer review behavior — found that **87% of consumers read online reviews for local businesses** before making a purchasing decision. More pointedly, **79% of consumers say they trust online reviews as much as personal recommendations from friends**. The mental model shift is complete: a stranger's review on Google has the same persuasive weight as a friend's recommendation, because both represent authentic, uncompensated feedback from a real user experience.
@@ -90,6 +98,14 @@ graph LR
 
 ## 10.4 Connecting Your Review Platforms
 
+:::{figure} ../images/ch10-gbp-connection.png
+:label: fig-ch10-gbp-connection
+:alt: Step-by-step visual guide showing four numbered steps to connect Google Business Profile to GHL
+:width: 100%
+:align: center
+Four steps to connect Google Business Profile: navigate to Reputation → Settings, authorize with Google, select your business location, and verify the green "Connected" status appears.
+:::
+
 Before you can monitor or respond to reviews in GHL, you must connect your review platforms.
 
 ### Connecting Google Business Profile
@@ -117,6 +133,14 @@ Click **Connect Facebook**. Sign in to the Facebook account with admin access to
 ---
 
 ## 10.5 Automated Review Requests: Setting Up the Review Engine
+
+:::{figure} ../images/ch10-review-request-flow.png
+:label: fig-ch10-review-request-flow
+:alt: Flowchart showing automated review request workflow from service completion through SMS request to optional follow-up
+:width: 100%
+:align: center
+The automated review request workflow: a 48-hour wait, a complaint gate, a warm SMS request, and a single 5-day follow-up — requesting reviews from every completed client without manual intervention.
+:::
 
 The review request system is where GHL's Reputation module earns its keep. An automated review request sent at exactly the right moment to every satisfied customer is worth more than a hundred conversations about why reviews matter.
 
@@ -167,6 +191,14 @@ In GHL → **Reputation → Requests → Templates**, build your template with m
 
 ## 10.6 Handling Negative Reviews: Your Public Crisis Response Protocol
 
+:::{figure} ../images/ch10-negative-review-response.png
+:label: fig-ch10-negative-review-response
+:alt: Three-step negative review response framework: Acknowledge, Empathize, Invite Private Resolution — with examples
+:width: 100%
+:align: center
+The acknowledge-empathize-resolve framework for negative review responses. Every step is visible to future prospects reading your reviews — respond to the audience, not just the reviewer.
+:::
+
 Every business with enough reviews will eventually receive a negative one. How you respond in public is watched by every future customer who reads that review thread. The response is not just for the unhappy customer — it is for every prospect who will read it for the next three years.
 
 The three-part negative review response framework:
@@ -192,6 +224,14 @@ Responding defensively to a negative review is the single most damaging thing mo
 ---
 
 ## 10.7 Review Widgets: Turning Your Star Rating Into a Sales Tool
+
+:::{figure} ../images/ch10-review-widget.png
+:label: fig-ch10-review-widget
+:alt: GHL review widget showing star rating, total reviews, and individual review cards with embed code below
+:width: 100%
+:align: center
+The GHL Review Widget: paste one HTML code block into your website or funnel and your live Google rating, review count, and most recent reviews display automatically — updating every time a new review arrives.
+:::
 
 You earned the reviews. Now put them to work.
 
@@ -222,6 +262,14 @@ In **Reputation → Widgets → + Create Widget**, configure your widget type an
 ---
 
 ## 10.8 Reputation Reporting: Measuring What Matters
+
+:::{figure} ../images/ch10-reputation-metrics.png
+:label: fig-ch10-reputation-metrics
+:alt: Reputation management dashboard showing average star rating, total reviews, response rate, and review request conversion rate
+:width: 100%
+:align: center
+Four reputation KPIs to monitor monthly: star rating (target 4.5+), total review volume, response rate (target 100%), and review request conversion rate (benchmark 25–35% for SMS requests).
+:::
 
 You cannot improve what you don't measure. GHL's Reputation Reporting gives you the metrics that matter for understanding where your reputation stands and where it is heading.
 
@@ -608,6 +656,14 @@ These numbers tell a service quality story that no customer satisfaction survey 
 ---
 
 ## 10.14 Case Study: From 23 Reviews to 211 Reviews in 180 Days — A Home Services Agency
+
+:::{figure} ../images/ch10-home-services-case-study.png
+:label: fig-ch10-home-services-case-study
+:alt: Infographic showing home services agency review growth from 23 to 211 reviews over 180 days with monthly bar chart
+:width: 100%
+:align: center
+180-day results: automated review requests after every completed job grew the client's review count from 23 to 211, improving their Google star rating from 3.9 to 4.8.
+:::
 
 Precision Home Services is a residential HVAC and plumbing company in the American Southeast (yes, the same region as the missed-call case study from Chapter 4 — let's assume they were thorough about their GHL implementation).
 

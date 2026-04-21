@@ -38,6 +38,14 @@ This chapter builds that instrument panel for your business.
 
 ## 11.2 The GHL Reporting Suite: What's Available and Where to Find It
 
+:::{figure} ../images/ch11-reporting-suite.png
+:label: fig-ch11-reporting-suite
+:alt: Infographic showing seven GHL report types with icons and descriptions
+:width: 100%
+:align: center
+The GHL Reporting Suite: seven report types covering contacts, attribution, calls, appointments, conversations, ad performance, and custom dashboards — each answering a different operational question.
+:::
+
 Navigate to **Reporting** in your GHL left sidebar. The Reporting module contains seven distinct report types, each answering different operational questions.
 
 ### Overview Dashboard
@@ -89,6 +97,14 @@ graph LR
 
 ## 11.3 Understanding Attribution: First Touch, Last Touch, and Why It Matters
 
+:::{figure} ../images/ch11-attribution-models.png
+:label: fig-ch11-attribution-models
+:alt: Comparison diagram showing First Attribution, Last Attribution, and Linear Attribution credit assignment across a customer journey
+:width: 100%
+:align: center
+Attribution models: the same customer journey assigns credit differently depending on the model used. Most businesses should start with Last Attribution (what closes deals?) before adding First Attribution (what attracts leads?).
+:::
+
 Attribution is the most misunderstood concept in marketing analytics. It is also the one that most directly determines how you allocate budget — which makes getting it right worth the effort.
 
 :::{prf:definition} Attribution
@@ -128,6 +144,22 @@ For accurate attribution, you must use properly configured UTM parameters on eve
 ---
 
 ## 11.4 Connecting Google and Facebook Ads Accounts
+
+:::{figure} ../images/ch11-facebook-capi-diagram.png
+:label: fig-ch11-facebook-capi
+:alt: Comparison diagram showing browser pixel tracking (unreliable) versus Facebook Conversions API server-side tracking (complete)
+:width: 100%
+:align: center
+Facebook Conversions API (CAPI) vs. browser pixel: server-side conversion tracking bypasses iOS privacy restrictions and ad blockers, delivering near-complete conversion data to Facebook's attribution model.
+:::
+
+:::{figure} ../images/ch11-google-ads-connection.png
+:label: fig-ch11-google-ads-connection
+:alt: Step diagram showing three steps to connect Google Ads to GHL with data flow showing conversions reported back
+:width: 100%
+:align: center
+Google Ads connection: three steps to link your ad account, plus the data flow showing how GHL contact creations and pipeline events report back to Google as conversion signals.
+:::
 
 Ad reporting in GHL requires connecting your ad accounts. This connection gives you campaign-level performance data inside GHL, alongside the contact-level attribution data from your CRM — creating a complete picture from ad impression to closed revenue.
 
@@ -169,6 +201,14 @@ As third-party cookie restrictions expand across browsers, pixel-based conversio
 
 ## 11.5 Call Reporting: The Revenue Data Nobody Talks About
 
+:::{figure} ../images/ch11-call-reporting-dashboard.png
+:label: fig-ch11-call-reporting-dashboard
+:alt: GHL call reporting dashboard showing total calls, answer rate, hourly call volume chart, and missed call time windows
+:width: 100%
+:align: center
+Call Performance dashboard: four headline metrics, hour-by-hour call volume distribution, and a table of peak missed-call windows — the data needed to staff phones correctly or deploy Voice AI strategically.
+:::
+
 For businesses where phone is a primary conversion channel — home services, healthcare, legal, financial, real estate — call reporting is arguably more valuable than any digital marketing report.
 
 ### Accessing Call Reporting
@@ -198,6 +238,14 @@ Monthly, pull the call recordings for your team's ten most recent booked appoint
 
 ## 11.6 Appointment Reports: The Scheduling Funnel
 
+:::{figure} ../images/ch11-appointment-funnel.png
+:label: fig-ch11-appointment-funnel
+:alt: Funnel chart showing appointment performance from leads generated through forms submitted, consultations booked, attended, and clients converted
+:width: 100%
+:align: center
+The appointment performance funnel: each stage has a benchmark conversion rate. A no-show rate above 15% signals a reminder sequence problem; a booked-to-submitted rate below 60% signals a calendar UX problem.
+:::
+
 GHL's Appointment Report shows the full scheduling funnel — from booking to attendance — broken down by calendar, service type, and assigned team member.
 
 ### Key Appointment Metrics
@@ -224,6 +272,14 @@ Review this dashboard weekly. A rising no-show rate is the earliest warning sign
 ---
 
 ## 11.7 Custom Dashboards: Your Business on One Screen
+
+:::{figure} ../images/ch11-custom-dashboard-layout.png
+:label: fig-ch11-custom-dashboard-layout
+:alt: GHL custom dashboard mockup showing Business Command Center with six widget tiles covering contacts, pipeline, calls, appointments, reputation, and response time
+:width: 100%
+:align: center
+The Business Command Center dashboard: six widgets, one screen, 90-second morning review. Every number has a decision attached to it.
+:::
 
 GHL's custom dashboard builder allows you to assemble any combination of report widgets into a single, configurable view — then share that view with team members or clients via a read-only link.
 

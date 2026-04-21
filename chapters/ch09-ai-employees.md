@@ -38,6 +38,14 @@ This is not science fiction. This is GHL's AI Employee suite, available in your 
 
 ## 9.2 What GHL's AI Employee Actually Is
 
+:::{figure} ../images/ch09-ai-employee-suite.png
+:label: fig-ch09-ai-employee-suite
+:alt: The five GHL AI Employee tools arranged as a workforce diagram: Voice AI, Conversation AI, Review AI, Content AI, and Workflow AI
+:width: 100%
+:align: center
+GHL's AI Employee suite — five specialized tools each designed for a specific job function that previously required a human staff member.
+:::
+
 Let's be precise, because the term "AI Employee" is used loosely and the result is confusion about what is actually possible. In GHL, AI Employee is not one tool — it is a **suite of five distinct AI-powered capabilities**, each designed for a specific job function within a business:
 
 **1. Voice AI** — An AI-powered phone agent that handles inbound and outbound voice calls in real-time natural language. It listens, understands, responds conversationally, follows your configured goals, books appointments, and hands off to a human when warranted.
@@ -49,6 +57,14 @@ Let's be precise, because the term "AI Employee" is used loosely and the result 
 **4. Content AI** — An AI writing assistant embedded inside GHL's funnel builder, email builder, and social planner. Generates headlines, body copy, subject lines, and CTAs from a brief description of your offer and audience.
 
 **5. Workflow AI** — The natural language automation builder covered in Chapter 4 that scaffolds entire workflow sequences from a plain-English description.
+
+:::{figure} ../images/ch09-workflow-ai-builder.png
+:label: fig-ch09-workflow-ai-builder
+:alt: GHL Workflow AI builder showing a natural language prompt generating a complete automation workflow
+:width: 100%
+:align: center
+Workflow AI converts a plain-English description into a scaffolded workflow with triggers, wait steps, and conditional branches — ready to review and activate.
+:::
 
 All five live under **Settings → AI Employee** in your GHL sub-account. AI features are metered separately from your base subscription — Voice AI charges per conversation minute, Conversation AI per message, and Content AI per generation. Check your current plan's AI credits under **Settings → AI Employee → Usage** before deploying at scale.
 
@@ -85,6 +101,14 @@ A **Voice AI Agent** is an AI-powered virtual phone representative that engages 
 :::
 
 ### Accessing Voice AI in GHL
+
+:::{figure} ../images/ch09-voice-ai-setup.png
+:label: fig-ch09-voice-ai-setup
+:alt: GHL Voice AI agent setup interface showing Settings path, agent configuration form, and call flow diagram
+:width: 100%
+:align: center
+Voice AI agent configuration: the Settings navigation path, agent fields, and how calls flow from caller through the AI agent to resolution or human handoff.
+:::
 
 Navigate to **Settings → AI Employee** in the left sidebar of your GHL sub-account. Click the **Voice AI** tab. If first-time setup, toggle **Enable Voice AI** and confirm the billing acknowledgment.
 
@@ -170,6 +194,14 @@ One important addition for text-based AI: configure **Response Style**. Text con
 
 ### Lead Qualification Sequences
 
+:::{figure} ../images/ch09-conversation-ai-flow.png
+:label: fig-ch09-conversation-ai-flow
+:alt: Sequence diagram showing Conversation AI qualification flow from lead greeting through booking with CRM field updates
+:width: 100%
+:align: center
+Conversation AI qualification sequence: the AI gathers lead information, updates CRM fields, books an appointment or escalates to a human — all without manual intervention.
+:::
+
 One of the highest-value Conversation AI configurations is an automated qualification sequence — a series of structured questions the AI asks every new inbound lead to determine their fit and readiness.
 
 Configure qualification questions in the **Bot Goals → Qualification Questions** section:
@@ -199,6 +231,14 @@ sequenceDiagram
 
 ### The Human Escalation Trigger
 
+:::{figure} ../images/ch09-human-handoff.png
+:label: fig-ch09-human-handoff
+:alt: Decision tree showing Voice AI human handoff triggers and routing logic for business hours vs. after-hours
+:width: 100%
+:align: center
+Human handoff decision tree: three escalation triggers route calls to live agents during business hours and to voicemail with SMS callback outside hours.
+:::
+
 Configure escalation in **Settings → AI Employee → Conversation AI → Escalation Rules**:
 
 - Contact explicitly asks for a human
@@ -222,11 +262,27 @@ The quality of your AI Employee scales directly with the quality of its training
 
 **Layer 4 — Guardrails.** What must the AI never do or say? "Do not quote specific pricing for services that require an in-person assessment. Do not compare our services to competitors by name. If asked about medical conditions or clinical outcomes, redirect to our licensed practitioners and offer to book a consultation. Never make guarantees about results."
 
+:::{figure} ../images/ch09-knowledge-base-layers.png
+:label: fig-ch09-knowledge-base-layers
+:alt: Four-layer pyramid showing the AI Training Framework: Identity, Knowledge, Goals, and Guardrails from bottom to top
+:width: 100%
+:align: center
+The Four-Layer AI Training Framework. Each layer builds on the one below it — a well-configured Guardrails layer requires solid Identity, Knowledge, and Goals foundations first.
+:::
+
 Apply these four layers consistently to both Voice AI and Conversation AI. Audit them quarterly as your business, pricing, or services change. A stale knowledge base is the most common cause of AI agent failures.
 
 ---
 
 ## 9.6 AI Appointment Booking: The Full Integration
+
+:::{figure} ../images/ch09-appointment-booking-ai.png
+:label: fig-ch09-appointment-booking-ai
+:alt: Diagram showing AI booking conversation flow alongside real-time calendar update and post-booking workflow trigger
+:width: 100%
+:align: center
+AI appointment booking: the conversation thread confirms a time slot while the GHL calendar updates in real time and the post-booking reminder workflow fires automatically.
+:::
 
 When properly configured, GHL's AI agents can access your real-time calendar availability, present open time slots, confirm the booking, and sync the appointment directly to your GHL calendar — all within a single voice call or text conversation. This is what separates GHL's AI Employee from a basic FAQ bot.
 
@@ -257,6 +313,14 @@ That exchange takes under 90 seconds. At 11:47 PM. With no Marcus required.
 ---
 
 ## 9.7 Review AI: Your Reputation on Autopilot
+
+:::{figure} ../images/ch09-review-ai-modes.png
+:label: fig-ch09-review-ai-modes
+:alt: Comparison of Suggestive Mode versus Auto-Pilot Mode for Review AI responses
+:width: 100%
+:align: center
+Review AI modes: Suggestive Mode drafts responses for human approval (maximum control, slower); Auto-Pilot Mode publishes instantly (maximum speed, lower control). Match the mode to your review volume.
+:::
 
 Every business accumulates reviews on Google and Facebook. Most businesses respond to those reviews inconsistently — sometimes quickly, often not at all — because whoever is responsible has fifteen other priorities. The result: a review section full of unanswered feedback that signals to prospective customers that nobody is paying attention.
 
@@ -300,6 +364,14 @@ Monitor Auto-Pilot review responses closely for the first 30 days after activati
 ---
 
 ## 9.8 Content AI: Your Built-In Copywriter
+
+:::{figure} ../images/ch09-content-ai-uses.png
+:label: fig-ch09-content-ai-uses
+:alt: Content AI embedded in three GHL tools: funnel builder, email composer, and social planner
+:width: 100%
+:align: center
+Content AI appears inside the three GHL builders where copy decisions happen — funnels, email campaigns, and social posts — so generation happens in context rather than requiring a separate tool.
+:::
 
 Content AI lives inside GHL's funnel builder, email composer, and social planner as an embedded writing assistant. Access it by clicking the **AI Content** (or wand icon) that appears inside any text field in these builders.
 
@@ -518,6 +590,14 @@ The agent must be assigned to the phone number's call flow. Go to Settings → P
 ::::
 
 ## 9.10 Case Study: 31 New Patients in 30 Days Without a Second Front Desk Hire
+
+:::{figure} ../images/ch09-med-spa-case-study.png
+:label: fig-ch09-med-spa-case-study
+:alt: Data visualization showing before/after metrics for med spa AI Employee deployment: 87 after-hours calls handled, 31 appointments booked
+:width: 100%
+:align: center
+Case study results: 87 after-hours calls handled by Voice AI in the first 30 days, generating 31 new patient appointments at a 36% booking conversion rate.
+:::
 
 Dr. Patel runs two chiropractic offices in suburban Atlanta — Alpharetta and Duluth. Between locations, his front desk team handles roughly 220 inbound calls monthly during business hours. Outside those hours, calls hit voicemail, and about 40% of callers never called back.
 

@@ -72,6 +72,14 @@ graph TD
 
 ## 12.3 Connecting Each Platform — Step by Step
 
+:::{figure} ../images/ch12-platform-connections.png
+:label: fig-ch12-platform-connections
+:alt: Hub-and-spoke diagram showing GHL Social Planner connected to seven social platforms with connection requirements for each
+:width: 100%
+:align: center
+GHL Social Planner platform connections: seven platforms, all managed from one hub. Each platform has specific account type requirements before connection is possible.
+:::
+
 Every platform connection follows the same high-level pattern: you authorize GHL via OAuth to access your account, select the specific page or profile to connect, and confirm. However, each platform has specific requirements that will block the connection if not met first. This section walks through each one.
 
 ### Facebook Pages
@@ -197,6 +205,14 @@ Platform APIs change. GHL updates its Social Planner integrations as platforms r
 
 ## 12.4 Scheduling and Publishing Posts
 
+:::{figure} ../images/ch12-social-calendar-view.png
+:label: fig-ch12-social-calendar-view
+:alt: GHL Social Planner calendar view showing color-coded scheduled posts by platform across a monthly grid
+:width: 100%
+:align: center
+The Social Planner Calendar View: color-coded posts by platform, hover preview cards, and monthly distribution at a glance — the difference between "posting when you remember" and "posting on a system."
+:::
+
 With at least one platform connected, you can begin scheduling content.
 
 ### Creating a New Post
@@ -225,6 +241,14 @@ The post composer opens:
 
 ## 12.5 AI Content Generation: Creating Posts in Seconds
 
+:::{figure} ../images/ch12-content-ai-workflow.png
+:label: fig-ch12-content-ai-workflow
+:alt: Four-step process diagram: write brief, generate AI variations, select and humanize, schedule across platforms
+:width: 100%
+:align: center
+Content AI workflow: four steps from blank brief to scheduled post. The AI handles the blank-page problem; you handle the authenticity. Every AI post should be edited before scheduling.
+:::
+
 GHL's Content AI in the Social Planner is your first-draft machine. It does not replace strategy or creativity — it eliminates the blank-page problem and the time it takes to write the first version of every post.
 
 ### How to Use Social Planner Content AI
@@ -251,6 +275,14 @@ Click **Generate**. GHL produces two to three caption variations. Select the bes
 ---
 
 ## 12.6 Content Queue and Best-Time Scheduling
+
+:::{figure} ../images/ch12-posting-schedule.png
+:label: fig-ch12-posting-schedule
+:alt: Weekly heat map showing optimal posting times by platform with darkest orange indicating best performance windows
+:width: 100%
+:align: center
+Platform-optimized posting windows (2025–2026 data): configure your Content Queue to match these windows for each platform and let GHL distribute your scheduled content automatically.
+:::
 
 Instead of manually choosing a specific time for every post, GHL's Social Planner includes a **Content Queue** feature that distributes scheduled content across your preferred posting windows automatically.
 
@@ -282,6 +314,14 @@ These are guidelines, not mandates. Your audience's behavior — visible in Soci
 ---
 
 ## 12.7 Managing Multiple Clients' Social Accounts at Agency Scale
+
+:::{figure} ../images/ch12-agency-multiaccount.png
+:label: fig-ch12-agency-multiaccount
+:alt: Agency architecture diagram showing multiple client sub-accounts each with separate Social Planner vs competing tools requiring separate subscriptions
+:width: 100%
+:align: center
+Agency Social Planner architecture: every client sub-account has its own Social Planner with isolated platform credentials, no tool subscriptions per client, and full management from the agency dashboard.
+:::
 
 For marketing agencies using GHL, the Social Planner's multi-sub-account architecture is one of its most significant competitive advantages over standalone social scheduling tools.
 
@@ -326,6 +366,14 @@ There is no native CSV import for bulk scheduling in GHL's Social Planner as of 
 ---
 
 ## 12.8 Social Media Reporting in GHL
+
+:::{figure} ../images/ch12-gbp-posts-local-seo.png
+:label: fig-ch12-gbp-posts-local-seo
+:alt: Infographic showing how Google Business Profile posting frequency correlates with local search pack appearance rate
+:width: 100%
+:align: center
+GBP posting and local SEO: weekly posting to Google Business Profile is one of the highest-ROI activities for local search visibility — and one of the least utilized by most local businesses.
+:::
 
 Social Planner Analytics provides basic post-level and account-level engagement metrics for connected platforms.
 
@@ -639,6 +687,14 @@ Direct Post
 ---
 
 ## 12.12 Social Media Strategy Frameworks for GHL Users
+
+:::{figure} ../images/ch12-441-framework.png
+:label: fig-ch12-441-framework
+:alt: Visual representation of the 4-1-1 content framework showing four educational posts, one soft sell, and one direct offer in sequence
+:width: 100%
+:align: center
+The 4-1-1 content framework: for every 6 posts, four provide genuine value with no sales pitch, one soft-sells through sharing or testimonial, and one makes a direct offer. Audiences follow and trust value-first accounts.
+:::
 
 Having the tool is only half the equation. What you post — and why — determines whether consistent publishing produces results or just produces noise. Here are three strategy frameworks that work particularly well in combination with GHL's Social Planner.
 
