@@ -354,222 +354,183 @@ The shift was not technical. Maria used a template she modified in an afternoon.
 
 ---
 
+
 ## 2.12 Lab 2: Build a Lead-Magnet Funnel End to End — Page, Form, Offer, Confirmation
 
-:::{important}
-This lab walks you through building a complete lead-magnet funnel inside VibeReach.io. You will create a landing page, configure an opt-in form, set up a thank-you page, connect a workflow trigger, and test the funnel end to end. Estimated time: 60–90 minutes.
-:::
+A lead-magnet funnel is the engine that converts cold traffic into named, tagged contacts in your CRM. In this lab, you build a complete two-page funnel — a landing page with an opt-in form, and a thank-you page — then wire it to a workflow trigger so every submission automatically creates a contact, delivers the lead magnet, and starts the follow-up sequence. By the end, you will have a live, working funnel URL you can send traffic to today.
 
-### Step 0 — Download Your Lab Resources
+:::{admonition} Lab Prerequisites
+:class: note
+Before starting this lab, you need:
+- An active VibeReach.io sub-account with your sending domain verified (Lab 0)
+- Your Lab 0 domain configured and pointing to VibeReach.io (for custom subdomain on funnel URL)
+- A lead magnet asset — this can be a simple PDF checklist (a one-page Google Doc saved as PDF works perfectly)
+- Approximately 45–60 minutes
 
-This lab uses a ready-made lead magnet you will deliver to every new opt-in. Download it now and save it to your desktop — you will link to it from your funnel's thank-you page.
+📥 **[Download lab02-funnel-template.json](https://raw.githubusercontent.com/liquid-books/vibe-marketing-martech/main/assets/lab02-funnel-template.json)**
 
-📥 **[Download lab02-mca-funding-checklist.md](https://raw.githubusercontent.com/liquid-books/vibe-marketing-martech/main/assets/lab02-mca-funding-checklist.md)**
-
-This is the "Free MCA Funding Checklist" — a 7-step qualification guide for business owners seeking merchant cash advance funding. Review it before building so you understand the offer you are marketing.
-
----
-
-### Step 1 — Plan Your Funnel Before You Build
-
-Before touching the platform, document your funnel blueprint. Building without a plan produces pages that look busy but do not convert.
-
-**Your Funnel Blueprint:**
-
-| Element | Your Decision |
-|---------|--------------|
-| **Lead Magnet Name** | Free MCA Funding Checklist |
-| **Lead Magnet Format** | PDF Checklist (7 steps) |
-| **Target Audience** | Business owners seeking merchant cash advance funding |
-| **Primary Problem Solved** | Knowing if they qualify before applying |
-| **Landing Page Headline** | "Download the Free MCA Funding Checklist: 7 Steps to Qualify for $50K–$500K in Business Capital" |
-| **Form Fields** | First Name, Email, Phone, Business Name |
-| **Thank-You Page Offer** | Book a free 15-minute funding consultation |
-| **Follow-Up Trigger** | Form submission → Tag "funnel-lead" → Welcome email |
-
-**Expected Outcome:** A clear funnel blueprint that serves as your build guide and future optimization reference.
-
----
-
-### Step 1 — Create the Funnel in VibeReach
-
-**Navigation:** From your VibeReach dashboard, go to **Sites** (left sidebar) → **Funnels** → click the **+ New Funnel** button in the top-right corner.
-
-**What to do:**
-1. A modal dialog appears asking for a funnel name. Type: **MCA Funding Checklist**
-2. In the "Domain" dropdown, select your connected subdomain (e.g., `leads.yourbusiness.com`) or use the default VibeReach subdomain
-3. Click **Create Funnel**
-
-The platform creates your new funnel and opens the funnel editor, showing an empty funnel with a prompt to add your first step.
-
-:::{note}
-VibeReach.io organizes funnels as "steps" — each step is one page in the sequence. Your funnel will have two steps: the Landing Page (Step 1) and the Thank-You Page (Step 2).
-:::
-
-**Expected Outcome:** A new funnel named "MCA Funding Checklist" appears in your Funnels list and the funnel builder is open.
-
-::::{dropdown} Troubleshooting — Funnel Not Creating
-:icon: wrench
-Refresh the browser, verify your account has Sites permission enabled (Settings → My Staff → your user), clear browser cache, or try Chrome — the most stable browser for the VibeReach builder.
-::::
-
----
-
-### Step 2 — Build the Landing Page
-
-**Navigation:** Inside your new funnel, click **+ Add New Step** → select **Opt-In Page** from the template options (or select **Blank** if you prefer to start from scratch).
-
-**What to do:**
-1. Name this step: **Landing Page** — click the pencil/edit icon next to the step name to rename
-2. Click **Edit Page** to open the page builder (this opens the drag-and-drop visual editor in a new tab or modal)
-3. In the builder, you will see a toolbar on the left with elements: Sections, Rows, Elements
-4. **Set your headline:** Click the existing headline text block (or add a new Headline element). Type: **Download the Free MCA Funding Checklist**
-5. **Set your subheadline:** Below the headline, add or click the subheadline element. Type: **7 Steps to Qualify for $50K–$500K in Business Capital — Without a Perfect Credit Score**
-6. **Add your bullet points:** Add a Bullet List element. Enter three to five benefits:
-   - ✓ Discover exactly what lenders look for before you apply
-   - ✓ Avoid the top 3 mistakes that get applications rejected instantly
-   - ✓ Know your funding range before you ever talk to a funder
-   - ✓ Works even if you've been declined before
-7. **Position your form:** Drag a Form element into the page, placing it to the right of the bullets (two-column layout) or directly below if using a single-column layout
-
-**Expected Outcome:** A landing page with a clear headline, subheadline, benefit bullets, and a form placeholder — all visible above the fold on a desktop screen.
-
-::::{dropdown} Troubleshooting — Builder Elements Not Dragging
-:icon: wrench
-Disable browser extensions (especially ad blockers), drag from the element icon rather than the label, or click an existing section and use the **Add Element** button instead of dragging.
-::::
-
----
-
-### Step 3 — Add the Opt-In Form
-
-**Navigation:** Still inside the page builder. Click on the Form element you placed in Step 2.
-
-**What to do:**
-1. A right-side panel appears with Form settings. Click **Add Field** or click the form element to open the **Form Editor**
-2. Add the following fields in order:
-
-   | Field Label | Field Type | Required? |
-   |------------|-----------|-----------|
-   | First Name | Single Line Text | Yes |
-   | Email Address | Email | Yes |
-   | Phone Number | Phone | Yes |
-   | Business Name | Single Line Text | Yes |
-
-3. For each field, click the gear/settings icon to set:
-   - **Placeholder text:** e.g., "Your first name," "Your best email address," "Best number to reach you," "Your business name"
-   - **Required toggle:** ON for all four fields
-4. **Customize the submit button:** Scroll to the Button section in the form editor. Change the button label from "Submit" to: **Send Me the Free Checklist →**
-5. **Style the button:** Set button background color to orange (#F97316 or your brand color) and text color to white
-
-**Expected Outcome:** A four-field form with clear labels, placeholder text, and an action-oriented button — embedded in your landing page.
-
----
-
-### Step 4 — Set the Form Submission Action
-
-**Navigation:** Still in the Form Editor panel. Look for the **"On Submit"** or **"Actions"** section at the bottom of the form settings.
-
-**What to do:**
-1. Click the **On Submit** dropdown or **Add Action** button
-2. Select: **Redirect to URL**
-3. For the redirect URL, you will enter the URL of your Thank-You page — which you will create next. For now, enter a placeholder: `https://yoursite.com/thank-you` (you will update this after Step 5)
-4. Click **Save** on the form
-
-:::{note}
-VibeReach.io also supports "Go to Next Step" as a redirect option for funnels — this automatically redirects to the next step in the same funnel without you needing to enter a URL. If this option is available in your form settings, use it instead of a manual URL — it is more reliable and automatically updates if your URL changes.
-:::
-
-**Expected Outcome:** The form is configured to redirect the visitor after submission. You will return to finalize this after building the thank-you page.
-
----
-
-### Step 5 — Build the Thank-You Page
-
-**Navigation:** Return to the main funnel view (close the page builder tab if it opened separately). Click **+ Add New Step** → select **Thank You Page** or **Blank** → name this step: **Thank You Page**.
-
-**What to do:**
-1. Click **Edit Page** to open the builder for this page
-2. **Set the confirmation headline:** Add a large Headline element: **Your MCA Funding Checklist Is On Its Way!**
-3. **Add a confirmation subheadline:** "Check your inbox — your checklist arrives within 2 minutes. Check your spam folder if you don't see it."
-4. **Set expectations:** Add a text block: "Over the next few days, we'll also send you additional resources on qualifying for business funding, understanding your options, and working with the right funders for your situation."
-5. **Add your next step CTA:** Add a Button element. Label: **Book Your Free 15-Minute Funding Strategy Call →** Link this to your calendar booking link (Calendly, VibeReach Calendar, or another scheduling tool)
-6. **Optional social share:** Add a text block: "Know another business owner who could use funding? Share this checklist:" followed by your funnel URL
-
-**Expected Outcome:** A professional thank-you page that confirms delivery, sets expectations, and offers a clear next step — converting more of your leads into booked calls without any additional ad spend.
-
-::::{dropdown} Troubleshooting — Thank You Page URL Not Showing
-:icon: wrench
-Click the gear/Settings icon on the Thank-You Page step. The "Path" field shows the URL slug (e.g., `/thank-you`). Combine your funnel domain + path for the full URL and paste it into the form's On Submit redirect field from Step 4.
-::::
-
----
-
-### Step 6 — Preview and Test the Funnel End to End
-
-**Navigation:** In the funnel builder, click **Preview** on the Landing Page step to open a preview URL.
-
-**What to do:**
-1. Open the preview URL in your browser (ideally in an incognito/private window to simulate a real visitor)
-2. Review the page on both desktop and mobile — use Chrome DevTools (F12 → toggle device toolbar) to check mobile layout
-3. Fill out the form with test information:
-   - First Name: Test
-   - Email: your real email address
-   - Phone: your real phone number
-   - Business Name: Test Business LLC
-4. Click your submit button (**Send Me the Free Checklist →**)
-5. Verify you are redirected to the Thank-You page
-6. Check that your test lead appears in **Contacts** in VibeReach (left sidebar → Contacts → search for "Test" or your test email)
-
-**Expected Outcome:** Your test submission appears as a new contact in VibeReach with all four fields populated and a timestamp showing the submission time.
-
-::::{dropdown} Troubleshooting — Test Lead Not Appearing in Contacts
-:icon: wrench
-Wait 30 seconds and refresh. Check the funnel's Form Submissions log (Analytics/Submissions tab). Verify each form field has a "Map to" setting in the Form Editor — unmapped fields collect data but do not create Contact records.
-::::
-
----
-
-### Step 7 — Connect a Workflow Trigger
-
-**Navigation:** Go to **Automation** (left sidebar) → **Workflows** → click **+ New Workflow** → select **Start from Scratch**.
-
-**What to do:**
-1. **Name your workflow:** `Funnel Lead — MCA Checklist Welcome`
-2. Click **+ Add New Trigger**
-3. Select trigger type: **Form Submitted**
-4. In the trigger settings, under "Funnel/Form," select your **MCA Funding Checklist** funnel and the specific form within it
-5. Click **Save Trigger**
-6. Now add your first action: click **+** below the trigger → select **Add Tag** → type tag name: `funnel-lead` → click **Save**
-7. Add a second action: click **+** → select **Send Email** → configure:
-   - **From Name:** Your name or business name
-   - **Subject:** "Here's Your MCA Funding Checklist 🎯"
-   - **Email Body:** Write a brief welcome email that delivers the checklist (attach the PDF or link to it), introduces yourself, and sets expectations for follow-up
-8. Click **Save Action**
-9. Click **Publish** (top right) to activate the workflow
-
-**Expected Outcome:** Every future form submission on your landing page automatically tags the contact "funnel-lead" and sends them the welcome email within seconds — no manual action required.
-
----
-
-### Step 8 — Get the Funnel URL and Verify It Is Live
-
-**Navigation:** Return to the main funnel view. Click the **Settings** (gear) icon on your Landing Page step, or click the **Share** / **Publish** icon in the funnel builder header.
-
-**What to do:**
-1. Locate the published funnel URL (e.g., `https://leads.yourbusiness.com/mca-funding-checklist`)
-2. If the funnel is still in draft mode, click **Publish** or **Make Live**
-3. Open the live URL in a new browser tab — this is the actual, public-facing version of your funnel
-4. Submit a second test through the live URL (use a different email address) to confirm the workflow fires correctly on the live version (not just in preview mode)
-5. Verify the second test contact appears in Contacts with the `funnel-lead` tag and receives the welcome email
-
-**Expected Outcome:** Your funnel is live at a real URL, accepting submissions, tagging contacts, and delivering automated welcome emails — ready for traffic.
-
-:::{important}
-Do not run paid ads to your funnel until you have completed at least two successful end-to-end test submissions on the live URL. The cost of a broken funnel — visitors who leave because the form errors or the redirect fails — is always greater than the time required to test it properly.
+The template file is a VibeReach.io funnel import — it gives you a pre-built two-page structure to customize rather than building from scratch.
 :::
 
 ---
+
+### Step 1: Create the Funnel
+
+1. In the left sidebar, click **Marketing** → **Funnels**.
+2. Click **+ New Funnel** in the upper right.
+3. When prompted "Start from Scratch or Import?", click **Import from File**.
+4. Upload `lab02-funnel-template.json` → click **Import**.
+
+If you prefer to build from scratch:
+1. Click **+ New Funnel** → **Start from Scratch**.
+2. **Funnel Name:** `Lab 2 — Lead Magnet Funnel` → click **Create Funnel**.
+3. You are taken to the funnel steps view. Click **+ Add Step**.
+
+:::{admonition} Why This Matters
+:class: tip
+A funnel in VibeReach.io is a container that holds multiple pages, tracks visitor flow between them, and connects to your CRM. Unlike a standalone page, a funnel has built-in conversion tracking — you can see how many visitors saw the landing page, what percentage submitted the form, and what percentage reached the thank-you page. This conversion rate data is how you improve the funnel over time.
+:::
+
+**You'll know you did this right when:** A funnel appears in your Funnels list with the name you entered and shows "0 Steps" (before you add pages) or the imported template structure.
+
+---
+
+### Step 2: Build (or Customize) the Landing Page
+
+1. In your funnel, click **+ Add Step** (or click the existing first step if you imported the template).
+2. Name this step: `Opt-In Page` → select **Funnel Page** type → click **Create Step**.
+3. Click **Edit Page** to open the page builder.
+4. In the builder, configure:
+   - **Headline:** Clear benefit statement — e.g., "The 5-Step Checklist to Get Your Business Funding-Ready in 7 Days"
+   - **Sub-headline:** One sentence expanding on the benefit — e.g., "Download the exact checklist our consultants use before every funding application"
+   - **Body text:** 2–3 bullet points listing specific things the lead magnet helps with
+5. Click **Save** in the builder.
+
+:::{admonition} Why This Matters
+:class: tip
+The headline is the most important element on the page — it determines whether a visitor stays or leaves in the first 3 seconds. A good headline names a specific benefit for a specific person. "Marketing Tips" is bad. "The 5-Step Checklist to Get Business Funding-Ready in 7 Days" is good. Be specific.
+:::
+
+**You'll know you did this right when:** The landing page preview shows your headline and bullet points. The page is readable on both desktop (preview button, desktop icon) and mobile (preview button, mobile icon).
+
+---
+
+### Step 3: Add the Opt-In Form
+
+1. In the page builder, locate the form element (it will already exist if you imported the template, or click the **Form** element from the left elements panel and drag it to the page).
+2. Click the form element to select it → click **Edit Form Fields**.
+3. Configure form fields:
+   - **First Name** — required
+   - **Email** — required
+   - **Phone** (optional — collect if your follow-up includes SMS)
+4. Set the submit button text to something action-oriented: "Send Me the Checklist" or "Get Instant Access"
+5. Click **Save**.
+
+:::{admonition} Why This Matters
+:class: tip
+Every field you add to a form reduces conversion rate. For a top-of-funnel lead magnet, First Name and Email is the standard minimum. Adding Phone is valuable if you intend to follow up by SMS or call, but expect a 10–20% reduction in form completion rate for each additional required field. Start minimal and add fields later once you've validated the funnel works.
+:::
+
+**You'll know you did this right when:** The form shows First Name, Email (and Phone if added), and a clearly labeled submit button. The form is linked to the funnel — not a standalone form.
+
+---
+
+### Step 4: Configure Form Submission Action
+
+1. Click the form in the builder → click **Edit Form Settings**.
+2. Under **On Submit**, select **Redirect to URL** or **Redirect to Funnel Step**.
+3. Select **Redirect to Funnel Step** → choose **Thank You Page** (the next step you will add in Step 5).
+4. Under **Notifications**, enable email notification to yourself so you know when leads come in.
+5. Click **Save**.
+
+**You'll know you did this right when:** The form's submission action shows "Redirect to Thank You Page" (or whatever you name the second step).
+
+---
+
+### Step 5: Build the Thank-You Page
+
+1. Back in the funnel steps view, click **+ Add Step**.
+2. Name: `Thank You Page` → type: **Funnel Page** → **Create Step**.
+3. Click **Edit Page**.
+4. Configure:
+   - **Headline:** "You're in! Check Your Email." or "Your checklist is on its way!"
+   - **Body:** Tell the lead exactly what happens next: "Your [Lead Magnet Name] is headed to your inbox right now. While you wait, here's your next step: [one clear CTA — book a call, watch a video, etc.]"
+   - Optional: embed a Calendly or GHL calendar widget for immediate appointment booking
+5. Click **Save**.
+
+:::{admonition} Why This Matters
+:class: tip
+The thank-you page is the most underused conversion opportunity in most funnels. A warm lead who just gave you their email is at peak interest — they just asked for something from you. A well-crafted thank-you page with one clear next step (book a call) converts 15–25% of opt-ins into booked appointments. An empty "thanks, check your email" page converts essentially zero.
+:::
+
+---
+
+### Step 6: Connect a Workflow Trigger
+
+1. In the left sidebar, click **Automation → Workflows**.
+2. Click **+ New Workflow → Start from Scratch**.
+3. Name: `Lab 2 — New Lead Magnet Opt-In` → **Create Workflow**.
+4. Click **+ Add New Trigger** → search for **Form Submitted** → select it.
+5. In the trigger configuration: **Filters → Form Name → is → [your Lab 2 opt-in form name]**.
+6. Click **Save Trigger**.
+7. Add Action → **Add Tag** → tag: `lead-magnet-download`.
+8. Add Action → **Send Email** → configure a delivery email with your lead magnet PDF attached.
+9. Click **Save Action** → toggle the workflow to **Active** → click **Publish**.
+
+**You'll know you did this right when:** The workflow shows "Active" status and the trigger is linked to your specific funnel form.
+
+---
+
+### Step 7: Get the Funnel URL and Test End to End
+
+1. Back in the funnel, click the ⚙️ settings icon for the Opt-In Page step.
+2. Set a custom path (URL slug) — e.g., `free-checklist` or `get-started`.
+3. If your domain is connected: the full URL becomes `yourdomain.com/free-checklist`.
+4. Copy the funnel URL.
+5. Open the URL in a new incognito browser window.
+6. Complete the form with a test email address (use your own).
+7. Verify: you are redirected to the Thank-You page, you receive the delivery email, and a new contact appears in GHL with the `lead-magnet-download` tag applied.
+
+**You'll know you did this right when:** A test submission creates a new contact in your CRM with the tag applied, the delivery email arrives with the lead magnet, and you're redirected to the thank-you page.
+
+---
+
+:::{admonition} Expected Outcome
+:class: tip
+Verify each item before moving to Chapter 3:
+
+- ☐ Funnel created with two steps: Opt-In Page and Thank-You Page
+- ☐ Landing page headline is specific, benefit-focused, and readable on mobile
+- ☐ Opt-in form collects First Name and Email (minimum), submit button is clearly labeled
+- ☐ Form submission redirects to Thank-You page
+- ☐ Thank-You page has a clear next step CTA
+- ☐ Workflow created, triggered by form submission, tags new contacts and sends delivery email
+- ☐ Workflow is Active/Published
+- ☐ Funnel URL is live — test submission creates a contact in GHL with tag applied
+
+You have a live lead generation machine. This funnel will generate contacts and start nurture sequences automatically for every piece of traffic you send to it.
+:::
+
+::::{dropdown} Troubleshooting Common Issues
+
+**Form submission doesn't redirect to the thank-you page:**
+Verify the form's "On Submit" action is set to "Redirect to Funnel Step" and the thank-you page step is selected. If the form redirects to a blank page or the same page, check the submission action setting in the form builder.
+
+**Test contact was created but the tag wasn't applied:**
+The workflow may not have fired. Check that the workflow is Active (not Draft). Verify the trigger filter specifies the correct form name. Open the workflow execution log to see if it triggered and any errors that occurred.
+
+**The delivery email didn't arrive:**
+Check your spam folder. Verify the Send Email action in the workflow uses your verified sending domain. If the email sending domain shows "Unverified," return to Lab 0 and complete the email authentication setup.
+
+**The funnel URL shows a 404 error:**
+Verify your domain is connected to VibeReach.io (Settings → Domains → should show "Verified"). Check that the funnel step's URL slug doesn't contain spaces or special characters. A fresh domain may need up to 48 hours for DNS propagation.
+
+**The form import template doesn't load:**
+If the JSON import fails, build the funnel from scratch using the step-by-step instructions. The template is a convenience — all the same elements are available manually in the builder.
+
+**Mobile preview looks broken:**
+All GHL page builder elements are responsive by default, but custom font sizes and manual spacing adjustments can break mobile layout. Use the Mobile Preview button (phone icon in the page builder toolbar) to check after each major edit. Reduce font sizes and column widths for elements that look oversized on mobile.
+::::
 
 ## 2.13 Chapter Takeaways & Reflection Questions
 

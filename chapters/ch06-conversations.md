@@ -429,201 +429,185 @@ The coaching agency case illustrates a common pattern: businesses invest in lead
 
 ---
 
+
 ## 6.12 Lab 6: Connect Every Channel and Build Your Snippet Library
 
-:::{admonition} Lab Objective
-:class: important
-By the end of this lab, you will have your VibeReach unified inbox operational with at least one channel active, your email sending verified, your web chat widget configured, and a library of five ready-to-deploy reply snippets. This is the practical foundation for everything in the remaining chapters.
-:::
+Your Conversations inbox is the nerve center of all two-way communication with your contacts. But it only works if all your channels — email, SMS, Facebook, Instagram, Google Business Messages, live chat — are actually connected to it. In this lab, you connect every relevant channel to your VibeReach.io account and build a reusable snippet library of your most frequently sent responses. By the end, every inbound message from any channel lands in one inbox, and your most common replies are available with a single keystroke — ending the copy-paste chaos permanently.
 
-**Time Required:** 45–60 minutes  
-**Prerequisites:** VibeReach account active, Ch. 0 sending domain configured, Ch. 5 phone number provisioned
+:::{admonition} Lab Prerequisites
+:class: note
+Before starting this lab, you need:
+- An active VibeReach.io sub-account with admin access
+- A Facebook Business Page (required for Facebook Messenger + Instagram DM connections)
+- An Instagram Business or Creator account connected to your Facebook Page
+- A Google Business Profile listing (for Google Business Messages)
+- Your provisioned GHL phone number from Chapter 5 (for SMS — must have A2P 10DLC approved)
+- Approximately 45–60 minutes
 
----
-
-### Step 1 — Navigate to Conversations and Tour the Inbox
-
-1. Log in to your VibeReach account at your sub-account dashboard.
-2. In the left sidebar, locate the **speech bubble / Conversations icon** (it looks like a chat bubble). Click it. You are now in the unified inbox.
-3. Take a 2-minute tour of the four zones:
-   - **Left panel:** Channel filters. You will see options like All, Unread, My Conversations, and eventually channel-specific filters as you connect them.
-   - **Center panel:** Your conversation list (likely empty or containing test conversations).
-   - **Main area:** When you click any conversation, the message thread appears here.
-   - **Right panel (contact sidebar):** Contact details, tags, pipeline stage, and custom fields.
-4. Note the reply box at the bottom. Locate the toggle between **Reply** and **Note** mode. Click between them to see the visual difference — make sure you understand which mode is which before you type anything to a customer.
-
----
-
-### Step 2 — Verify Your Email Channel
-
-1. In the conversation reply box, confirm that **Email** appears as a channel tab option (alongside SMS, etc.).
-2. Your sending domain from Chapter 0 should already be configured. To verify: go to **Settings → Email Services** and confirm your sending domain shows as "Active" or "Verified."
-3. Create a test conversation: click **+ New Conversation** (or the compose icon), select a test contact (or yourself), choose Email as the channel, and send a brief test message.
-4. Confirm the email arrives in your inbox. The conversation thread in VibeReach now shows the sent message.
-
-:::{admonition} A Note on SMS
-:class: warning
-Your provisioned phone number from Chapter 5 is connected, but **outbound SMS will not function until your A2P 10DLC registration is approved** — a carrier compliance requirement that typically takes 1–3 weeks. Inbound SMS (receiving texts from others) works immediately. Do not wait for 10DLC approval to continue — focus on email, web chat, and snippet building in this lab.
+**A2P Note:** If A2P 10DLC registration is not yet approved, SMS will be read-only (inbound messages appear but outbound is blocked). Complete this lab's non-SMS channels now and return for SMS once A2P is approved.
 :::
 
 ---
 
-### Step 3 — Set Up Your Web Chat Widget
+### Step 1: Connect Your Facebook Page and Instagram DMs
 
-1. Navigate to **Settings → Chat Widget** (sometimes listed under **Settings → Integrations → Chat Widget**).
-2. Configure the widget:
-   - **Widget Name:** Your business name
-   - **Greeting Message:** Something like "Hi! How can we help you today?"
-   - **Availability Hours:** Set your business hours
-   - **Agent Name/Avatar:** Add your name or team name
-3. Click **Save** and then **Get Code** (or "Embed Code").
-4. Copy the JavaScript embed snippet provided.
-5. Note where it would go: this snippet gets pasted just before the `</body>` tag on every page of your website. If you have a website and access to its code (Squarespace, WordPress, Wix, etc.), paste it now. If not, save the code to a text file labeled `web-chat-embed.txt` for later implementation.
-6. To test: once embedded, open your website in a new browser tab. The chat bubble should appear in the bottom-right corner. Send a test message. It should appear in your VibeReach conversations within seconds.
+1. In the left sidebar, click ⚙️ **Settings** → **Integrations**.
+2. Find **Facebook** in the integrations list → click **Connect**.
+3. Click **Connect with Facebook** — a Facebook authorization window opens.
+4. Log in with the Facebook account that manages your Business Page.
+5. Grant all requested permissions (required for Messenger access).
+6. In the "Select Pages" step, check the box next to your Business Page → click **Continue** → **Done**.
+7. Back in GHL Integrations, your Facebook Page should appear as "Connected."
 
----
+**To connect Instagram:**
 
-### Step 4 — Connect Additional Channels (Reference Only)
+After connecting Facebook, Instagram connection is available in the same Integrations panel:
 
-The following channels require external account connections and are beyond the scope of this lab's core deliverable. When you are ready, connect them via **Settings → Integrations**:
+1. Find **Instagram** in the integrations list → click **Connect**.
+2. Select the Instagram Business account linked to your Facebook Page.
+3. Grant messaging permissions.
+4. Confirm the Instagram account shows "Connected."
 
-- **Facebook Messenger:** Requires a connected Facebook Business Page with admin access
-- **Instagram DMs:** Requires a Facebook-connected Instagram Business Account
-- **Google Business Messages:** Requires a verified Google Business Profile
-- **WhatsApp:** Requires a WhatsApp Business API account
-
-For each, navigate to **Settings → Integrations**, find the channel, and follow the OAuth or API key connection flow. Most take 5–10 minutes once you have the necessary account credentials.
-
----
-
-### Step 5 — Build Snippet #1: Welcome / First Response
-
-1. In the left sidebar, click **Conversations** to return to the inbox view.
-2. Look for **Snippets** — it may appear as a sub-menu item under Conversations, or accessible via the **lightning bolt icon** in the reply box. Click it.
-3. Click **+ New Snippet** (or the plus / Add button).
-4. Configure the snippet:
-   - **Snippet Name:** `WEL - Welcome / First Response`
-   - **Message Body:**
-
-```
-Hi {{contact.first_name}},
-
-Thanks so much for reaching out! We love connecting with {{contact.business_name}} owners who are serious about growth.
-
-I'd love to learn more about where you're at and how we might be able to help. What's the best way to connect — a quick call, or would you prefer to chat here first?
-
-Looking forward to it,
-{{user.first_name}}
-```
-
-5. Click **Save**. Your first snippet is live.
-
----
-
-### Step 6 — Build Snippets #2–5
-
-Following the same navigation (**Conversations → Snippets → + New Snippet**), create the remaining four snippets:
-
-**Snippet #2 — Follow-Up Check-In**
-- Name: `FLW - Follow-Up Check-In`
-```
-Hi {{contact.first_name}},
-
-Just checking in — I wanted to make sure my last message didn't get lost in the shuffle. We've been helping businesses like {{contact.business_name}} [achieve specific result], and I'd hate for us to miss the chance to connect.
-
-Still interested in a quick conversation? I'm flexible on timing — just let me know what works.
-
-[Your Name]
-```
-
-**Snippet #3 — Scheduling Link**
-- Name: `SCH - Schedule a Call`
-```
-Hi {{contact.first_name}},
-
-Great hearing from you! The easiest next step is to grab a time that works for both of us. Here's my calendar link:
-
-👉 [YOUR CALENDAR LINK HERE]
-
-Pick any slot that works — calls are typically 20–30 minutes and completely focused on your situation.
-
-Talk soon,
-[Your Name]
-```
-
-**Snippet #4 — Pricing Inquiry**
-- Name: `PRC - Pricing Inquiry`
-```
-Hi {{contact.first_name}},
-
-Great question — and I appreciate you being direct about it!
-
-Our programs start at [PRICE RANGE] and are customized based on your specific goals and situation. Rather than give you a number out of context, I'd love to spend 20 minutes understanding what you're working toward so I can give you an honest recommendation.
-
-Would you be open to a quick call this week? No obligation — just a real conversation.
-
-[Your Name]
-```
-
-**Snippet #5 — Not Interested / Nurture**
-- Name: `NIN - Not Interested / Stay In Touch`
-```
-Hi {{contact.first_name}},
-
-Totally understand — timing is everything, and the right moment matters more than a quick decision.
-
-I'll stay out of your inbox for now. But if things shift or you ever want to revisit the conversation, I'm one message away. Rooting for {{contact.business_name}} either way!
-
-Take care,
-[Your Name]
-```
-
----
-
-### Step 7 — Test a Snippet in a Real Conversation
-
-1. Open any conversation in your inbox (or create a test one with your own email).
-2. Click in the reply box. Look for the **snippet icon** — it typically looks like a lightning bolt ⚡ or a document icon, located in the toolbar at the bottom of the reply box.
-3. Click the snippet icon. A list of your saved snippets appears.
-4. Select `WEL - Welcome / First Response`.
-5. Verify the snippet text populates in the reply box with the merge fields shown (e.g., `{{contact.first_name}}` should already be resolved to the contact's actual name if the contact record has a name).
-6. Do NOT send this to a live customer. Simply confirm it loaded correctly, then clear the reply box.
-
----
-
-:::{admonition} ✅ Expected Outcome
+:::{admonition} Why This Matters
 :class: tip
-At the end of Lab 6, you should have:
-- ✅ Navigated and toured the Conversations unified inbox
-- ✅ Email channel verified and test message sent
-- ✅ Web Chat widget configured (and embedded or saved for embedding)
-- ✅ Noted the path to connect Facebook, Instagram, Google Business, and WhatsApp when ready
-- ✅ Five snippets created: WEL, FLW, SCH, PRC, NIN
-- ✅ Tested a snippet in a conversation — it populates and merges correctly
-
-**Your snippet library is now a communication asset.** Every future agent, every new team member, every high-volume period benefits from the five templates you built today.
+Facebook Messenger is where a significant portion of inbound inquiries from your ad campaigns land. Instagram DMs capture followers who saw a post or story and clicked through. Without these connections, those messages sit in native Facebook/Instagram inboxes where team members need separate logins, conversation history is fragmented, and automation cannot touch them. Connected to GHL, they become first-class contacts in your CRM.
 :::
 
-::::{dropdown} 🔧 Troubleshooting Common Lab Issues
-
-**Snippet icon not visible in reply box**
-The snippet icon may only appear when the reply box is active (clicked into). Click inside the text area first, then look for the icon toolbar. In some VibeReach configurations, snippets are accessed via a `/` slash command — type `/wel` and see if your Welcome snippet appears.
-
-**Merge fields not resolving (showing `{{contact.first_name}}` literally)**
-This happens when the contact record for the test conversation has no first name entered. Go to the contact record, add a first name, return to the conversation, and re-insert the snippet. In a real workflow, this is why contact data completeness matters.
-
-**Web chat widget not appearing on website**
-Confirm the embed code is pasted before `</body>` (not in the `<head>`). Also check that no browser ad blocker is hiding the widget during testing — try in an incognito window. If using a website builder, some platforms require the script to be added in a specific "custom code" or "footer code" area.
-
-**Email test message goes to spam**
-Your sending domain may need additional time for DNS propagation, or DMARC/DKIM records from Chapter 0 may not yet be fully propagated. Wait 24 hours and retry. Use mail-tester.com to diagnose specific deliverability issues.
-
-**Cannot find Snippets navigation**
-In VibeReach, snippets may be located under: (a) the left sidebar Conversations section as a sub-item, (b) the lightning bolt icon inside the active reply box, or (c) Settings → Snippets. Check all three locations — the interface layout can vary based on your account configuration.
-
-::::
+**You'll know you did this right when:** In Settings → Integrations, both Facebook (with your Page name listed) and Instagram (with your account listed) show green "Connected" status.
 
 ---
+
+### Step 2: Connect Google Business Messages
+
+1. ⚙️ **Settings** → **Integrations** → find **Google Business Profile** (or Google My Business) → **Connect**.
+2. Authorize with the Google account that owns your Google Business Profile.
+3. Select your business location from the list → confirm.
+4. Back in Integrations, your GBP listing should show "Connected."
+
+**You'll know you did this right when:** Your Google Business Profile listing appears with "Connected" status. Messages sent to your GBP via Google Maps / Google Search will now route to your GHL Conversations inbox.
+
+---
+
+### Step 3: Add the Live Chat Widget to Your Website
+
+1. ⚙️ **Settings** → **Chat Widget** (or look for **Website Chat** in the Integrations panel).
+2. Click **Configure Chat Widget**.
+3. Customize:
+   - **Widget Headline:** "How can we help?" or your brand message
+   - **Widget Color:** Match your brand primary color (hex code)
+   - **Agent Name and Photo:** Add your name and a professional headshot
+   - **Auto-Greeting:** "Hi! We typically respond in under 5 minutes. What can we help you with?"
+4. Click **Save**.
+5. Click **Get Code** → copy the JavaScript embed code.
+6. Paste the code in the `<head>` section of your website (or add it via your website platform's header scripts: WordPress → header.php or a plugin like Insert Headers and Footers; Squarespace → Settings → Advanced → Code Injection).
+
+:::{admonition} Why This Matters
+:class: tip
+Website chat converts passive visitors into conversations. The GHL chat widget is not a third-party tool that syncs data later — it creates a GHL contact immediately when someone chats, giving you the visitor's name and email before the conversation even starts. The auto-greeting sets the expectation for response time and makes the widget feel like a real person is present, not a bot.
+:::
+
+**You'll know you did this right when:** The chat widget appears on your website (open it in a browser after adding the code). Send a test message — it should appear in your GHL Conversations inbox within seconds.
+
+---
+
+### Step 4: Verify Your Phone/SMS Channel
+
+If your A2P 10DLC registration from Chapter 5 is approved:
+
+1. ⚙️ **Settings** → **Phone System** → confirm your provisioned number shows "Active."
+2. Navigate to **Conversations** and confirm the SMS channel icon is available in the message compose area.
+3. Send a test SMS to yourself: click **+ New Conversation**, select your own number, choose SMS channel, type "Test" → send.
+4. Reply from your personal phone — confirm the reply lands in GHL Conversations.
+
+**You'll know you did this right when:** Your provisioned number can send and receive SMS, and the conversation thread appears in GHL Conversations with both outbound and inbound messages shown.
+
+---
+
+### Step 5: Build Your Snippet Library
+
+Snippets are pre-written text blocks you insert into any message with `/` shortcut. You are going to create 8 core snippets that handle your most common reply scenarios.
+
+1. In the left sidebar, click **Conversations** → look for the **Snippets** option (usually in the Conversations settings or under the compose toolbar → three-dot menu → "Snippets").
+   
+   **Alternative path:** ⚙️ **Settings** → **Conversations** → **Snippets** tab.
+
+2. Click **+ New Snippet** for each of the following:
+
+**Snippet 1 — Initial Response (Fast Reply)**
+- Shortcut: `/hi`
+- Content: "Hi {{contact.first_name}}! Thanks for reaching out to [Business Name]. I'm [Your Name] — how can I help you today?"
+
+**Snippet 2 — Appointment Booking**
+- Shortcut: `/book`
+- Content: "I'd love to set up a time to connect! Here's my calendar link so you can grab a spot that works for you: [Calendar URL]. It's a [X]-minute call — completely free, no obligation."
+
+**Snippet 3 — Pricing Inquiry**
+- Shortcut: `/price`
+- Content: "Great question! Our pricing depends on a few factors specific to your situation. The best way to get an accurate number is a quick 15-minute call where I can learn more about what you need. Want to grab a time? [Calendar URL]"
+
+**Snippet 4 — Not Ready Yet (Nurture)**
+- Shortcut: `/nurture`
+- Content: "Totally understand — timing is everything. I'll make a note to follow up with you in [timeframe]. In the meantime, feel free to reply to this message anytime with questions. We're always here."
+
+**Snippet 5 — Documents Needed**
+- Shortcut: `/docs`
+- Content: "To move forward, I'll need the following: [list your required documents]. The easiest way to send them is [method]. Once I have those, we can typically [next step] within [timeframe]."
+
+**Snippet 6 — Closed Won — Handoff to Onboarding**
+- Shortcut: `/won`
+- Content: "Welcome aboard, {{contact.first_name}}! I'm so excited to get started. Your onboarding coordinator will reach out within 24 hours with next steps. If you have any questions before then, I'm always reachable here."
+
+**Snippet 7 — Review Request (Manual)**
+- Shortcut: `/review`
+- Content: "{{contact.first_name}}, it was such a pleasure working with you on this! If you have 60 seconds, a Google review would mean the world to us and help other clients find us: [Google Review Link]. Thank you!"
+
+**Snippet 8 — Out of Office / After Hours**
+- Shortcut: `/ooo`
+- Content: "Thanks for your message! Our team is currently unavailable but will respond by [next business day/time]. For urgent matters, call [phone number] and leave a voicemail — we'll return your call as soon as possible."
+
+3. Click **Save** after each snippet.
+
+:::{admonition} Why This Matters
+:class: tip
+Snippets are not shortcuts for lazy replies — they are quality control. Every contact who sends a message gets the same professional, thoughtful, correctly-spelled response regardless of which team member is on duty. They also dramatically reduce the response time lag caused by composing from scratch for common inquiries.
+:::
+
+**You'll know you did this right when:** In a Conversations compose window, type `/` and see your snippet shortcuts appear in a dropdown. Click one and confirm it populates the message field with the correct text and merge fields.
+
+---
+
+:::{admonition} Expected Outcome
+:class: tip
+Verify each item before moving to Chapter 7:
+
+- ☐ Facebook Page connected — shows green "Connected" in Settings → Integrations
+- ☐ Instagram connected — Business account linked through Facebook Page
+- ☐ Google Business Profile connected — messages routing to Conversations inbox
+- ☐ Live chat widget installed on your website — test message appears in GHL inbox
+- ☐ SMS channel verified — test SMS sent and reply received (if A2P approved)
+- ☐ At least 8 snippets created with shortcut keys
+- ☐ `/` trigger tested in compose window — snippets appear in dropdown
+
+You now have a true unified inbox. Every inbound message from every channel lands in one place, and your team can respond consistently with your pre-built snippet library.
+:::
+
+::::{dropdown} Troubleshooting Common Issues
+
+**Facebook "Connect" redirects to an error page:**
+Clear your browser cache and disable any pop-up blockers. GHL opens the Facebook OAuth flow in a new window — if pop-ups are blocked, the connection fails silently. Allow pop-ups for your GHL domain and try again.
+
+**Instagram shows connected but DMs aren't appearing:**
+Instagram DM routing requires that your Instagram account be a Business or Creator account (not Personal) and that it is linked to your Facebook Business Page. Check this in Instagram → Settings → Account → Switch to Professional Account (if needed), then re-link to your Facebook Page.
+
+**Google Business Profile connection succeeds but no messages come through:**
+Google Business Messages must be enabled for your GBP listing. In your Google Business Profile Manager, check that messaging is turned on (Profile → Messaging → Enable). Messages typically take 24 hours to start routing after connection.
+
+**Chat widget code was added but the widget doesn't appear on the website:**
+Confirm the code is in the `<head>` section (not the `<body>` or `<footer>`). Test in an incognito window (some browser extensions block chat widgets). If using WordPress, confirm the plugin that injects header code is active and not cached — clear your CDN cache.
+
+**Snippets `/` shortcut doesn't trigger in Conversations:**
+The shortcut only works in the message compose box within the Conversations module, not in campaign email composers. Type `/` and wait — there may be a brief delay before the popup appears. If no popup appears, check that snippets are created and saved correctly in Settings → Conversations → Snippets.
+::::
 
 ## 6.13 Chapter Takeaways & Reflection Questions
 

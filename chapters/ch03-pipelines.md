@@ -403,190 +403,196 @@ None of these improvements came from underwriting. They came from visibility. Th
 
 ---
 
+
 ## 3.10 Lab 3: Design a Three-Pipeline Structure for Your Own Business
 
-In this lab, you will design and build three pipelines inside VibeReach — a Sales Pipeline, an Onboarding Pipeline, and a Renewal Pipeline — and practice creating and moving opportunities through them.
+A pipeline without stages is just a list of names. A pipeline with the right stages is a decision-support system — it tells you at a glance where every deal stands, what action is needed, and which opportunities are stalling. In this lab, you build three distinct pipelines for your business: a Sales pipeline (converting leads to closed clients), an Onboarding pipeline (delivering your service), and a Renewal pipeline (protecting long-term revenue). Together, they give you complete revenue visibility from first contact through retention.
 
-**Estimated time:** 45–60 minutes
+:::{admonition} Lab Prerequisites
+:class: note
+Before starting this lab, you need:
+- An active VibeReach.io sub-account with admin access
+- A clear understanding of your business's sales process (the steps a lead goes through from first inquiry to paying client)
+- A service or product that involves an ongoing client relationship (not required, but Renewal pipeline is most relevant if you have recurring clients)
+- Approximately 30–45 minutes
 
-**What you will need:**
-- Access to your VibeReach sub-account
-- Your lab planning template (download below)
-- A clear idea of how your business actually closes and delivers work
+📥 **[Download lab03-pipeline-planning-worksheet.pdf](https://raw.githubusercontent.com/liquid-books/vibe-marketing-martech/main/assets/lab03-pipeline-planning-worksheet.pdf)**
+
+Complete the worksheet before building. It guides you through mapping your stages before clicking a single button.
+:::
 
 ---
 
-### Step 0 — Download Your Pipeline Planning Template
+### Step 1: Plan Your Pipelines on Paper (Before You Build)
 
-📥 **[Download lab03-pipeline-planner.csv](https://raw.githubusercontent.com/liquid-books/vibe-marketing-martech/main/assets/lab03-pipeline-planner.csv)**
+Before touching the platform, spend 10 minutes on the worksheet:
 
-Open this file **before touching the platform**. It contains pre-built stage definitions for a Sales Pipeline, Onboarding Pipeline, and Renewal Pipeline — complete with suggested win probabilities and stage descriptions. Review and customize the stage names for your specific business before building anything in VibeReach.
+**Sales Pipeline:** List the stages a new lead moves through from first contact to closed/won. Common stages: `New Lead → Contacted → Qualified → Proposal Sent → Negotiation → Closed Won / Closed Lost`
 
-```{admonition} Why Plan Before Building
+**Onboarding Pipeline:** List the steps after someone becomes a client. Common stages: `Contract Signed → Kickoff Scheduled → Setup In Progress → Delivered → Review Requested → Complete`
+
+**Renewal Pipeline:** List the stages for renewing or retaining existing clients. Common stages: `Active Client → Renewal Due (60 days) → Renewal Sent → Renewal Accepted → Churned`
+
+Identify for each stage: what action moves a contact from this stage to the next one?
+
+:::{admonition} Why This Matters
 :class: tip
-The most common pipeline mistake is building stages inside the platform and then realizing they do not match your actual sales motion. The CSV template forces you to think through your process on paper first. Five minutes of planning saves two hours of rework.
-```
+Building a pipeline without planning first leads to stages that don't reflect how your business actually works — meaning your team won't use them. The 10-minute planning exercise prevents rebuilding the pipeline three times.
+:::
 
 ---
 
-### Step 1 — Create Your Sales Pipeline
+### Step 2: Create Your Sales Pipeline
 
-**Navigate:** In VibeReach, click **Opportunities** in the left-hand sidebar. At the top of the screen, click **Pipelines**.
+1. In the left sidebar, click **Opportunities** (or **CRM → Opportunities**, depending on your GHL version).
+2. Click **+ Add Pipeline** or the **Pipelines** tab → **+ New Pipeline**.
+3. **Pipeline Name:** `[Your Business Name] — Sales`
+4. Click **Create Pipeline**.
 
-**Action:** Click **"+ Add Pipeline"** (or **"Create New Pipeline"**) in the top-right corner.
+**You'll know you did this right when:** A new pipeline appears in the Pipelines list and you are taken to the stage configuration view.
 
-**Type:** `Sales Pipeline` in the Pipeline Name field.
+---
 
-**Click:** Save.
+### Step 3: Add Stages to Your Sales Pipeline
 
-**Expected Result:** A new empty pipeline called "Sales Pipeline" appears in your pipeline list.
+You are now in the pipeline stage builder. Add each stage you identified in Step 1:
 
-::::{dropdown} Troubleshooting: Can't find the Pipelines tab?
-If you do not see a "Pipelines" tab at the top of the Opportunities section, look for a gear icon or settings icon within the Opportunities area. In some VibeReach configurations, pipeline management is accessed via **CRM → Pipelines** in the left sidebar. If neither works, navigate to **Settings → Pipelines** from the sub-account settings menu.
+1. Click **+ Add Stage**.
+2. Enter the stage name → click **Save**.
+3. Repeat for each stage.
+
+For the standard sales pipeline:
+- `New Lead`
+- `Contacted`
+- `Qualified`
+- `Proposal Sent`
+- `Negotiation`
+- `Closed Won` *(mark this as a Won stage in the dropdown)*
+- `Closed Lost` *(mark this as a Lost stage in the dropdown)*
+
+For each stage, set the **Win Probability %** — this feeds your pipeline revenue forecast. Example: New Lead = 5%, Qualified = 30%, Proposal Sent = 60%, Negotiation = 80%.
+
+Click **Save Pipeline**.
+
+:::{admonition} Why This Matters
+:class: tip
+Win probability percentages let GHL calculate your expected revenue at any moment. If you have $50,000 in opportunities at "Proposal Sent" (60% probability) and $20,000 at "New Lead" (5% probability), your expected pipeline value is $31,000. That number drives decisions about whether you need more deals in the pipeline or better closing rates.
+:::
+
+**You'll know you did this right when:** The pipeline shows all your stages in the correct order, and Closed Won / Closed Lost are marked with the appropriate outcome type.
+
+---
+
+### Step 4: Create Your Onboarding Pipeline
+
+1. Click **+ New Pipeline** (or return to the Pipelines list → **+ Add Pipeline**).
+2. **Pipeline Name:** `[Your Business Name] — Onboarding`
+3. Add your onboarding stages:
+   - `Contract Signed`
+   - `Kickoff Scheduled`
+   - `Setup In Progress`
+   - `Delivered / Live`
+   - `Review Requested`
+   - `Complete`
+4. Click **Save Pipeline**.
+
+:::{admonition} Why This Matters
+:class: tip
+Most businesses track sales in a pipeline but abandon pipeline tracking the moment a client signs. This creates an invisible bottleneck — late deliveries, missed kickoffs, and forgotten deliverables that cause churn. An Onboarding pipeline makes every in-progress client visible. When a client is stuck in "Setup In Progress" for three weeks, you see it and can act before they send a frustrated email.
+:::
+
+**You'll know you did this right when:** A second pipeline appears in your Pipelines list with its own set of stages. It is completely separate from the Sales pipeline.
+
+---
+
+### Step 5: Create Your Renewal Pipeline
+
+1. **+ New Pipeline** → **Pipeline Name:** `[Your Business Name] — Renewals`
+2. Add stages:
+   - `Active Client`
+   - `Renewal Due — 60 Days`
+   - `Renewal Sent`
+   - `Renewal Accepted` *(mark as Won)*
+   - `Churned` *(mark as Lost)*
+3. **Save Pipeline**.
+
+**You'll know you did this right when:** A third pipeline exists in your list. All three pipelines (Sales, Onboarding, Renewals) are visible and distinct.
+
+---
+
+### Step 6: Create Your First Opportunity
+
+Now populate your Sales pipeline with a real (or practice) deal:
+
+1. Click into your **Sales pipeline** → click **+ Add Opportunity** (or **+ New Opportunity**).
+2. Configure:
+   - **Opportunity Name:** `[Contact Name] — [Service]` (e.g., "Rivera Roofing — Marketing Retainer")
+   - **Contact:** Search for and select a contact from your imported Lab 1 contacts
+   - **Pipeline:** Sales pipeline
+   - **Stage:** `New Lead`
+   - **Value:** Enter the estimated deal value in dollars
+   - **Assigned To:** Yourself
+3. Click **Save**.
+
+**You'll know you did this right when:** The opportunity appears in the Kanban board view under the "New Lead" column with the contact name, value, and your name as assigned.
+
+---
+
+### Step 7: Practice Moving Opportunities and Run the Morning Ritual
+
+1. Click the opportunity card you just created → drag it to the **Contacted** stage.
+2. Add a note: "Initial call completed — prospect is interested in retainer."
+3. Create a task: "Send proposal by [date]" with a due date.
+4. Click **Save**.
+
+**The Morning Stand-Up Ritual:** Every business day, open your Opportunities board and scan for:
+- Anything in "New Lead" for more than 24 hours with no activity
+- Anything in "Proposal Sent" for more than 7 days with no movement
+- Anything in "Negotiation" with a close date in the past
+
+These three checks — 2 minutes total — are how you prevent deals from dying quietly in a stage with no follow-up.
+
+:::{admonition} Why This Matters
+:class: tip
+The pipeline is not a trophy case — it's a task manager. The morning ritual turns the pipeline from a reporting tool into an action trigger. Every stalled deal you catch in the morning ritual is one that doesn't fall through the cracks by end of week.
+:::
+
+**You'll know you did this right when:** The opportunity has a note, a task, and shows the updated stage. The Kanban board shows at least one card in a stage beyond "New Lead."
+
+---
+
+:::{admonition} Expected Outcome
+:class: tip
+Verify each item before moving to Chapter 4:
+
+- ☐ Sales pipeline created with stages from New Lead through Closed Won/Lost
+- ☐ Win probability % set for each stage
+- ☐ Onboarding pipeline created with post-signature stages
+- ☐ Renewal pipeline created with retention-focused stages
+- ☐ At least one opportunity created in the Sales pipeline
+- ☐ Opportunity has a note and a task with a due date
+- ☐ You can describe the morning stand-up ritual (what you check, why, how often)
+
+You now have a complete revenue operations structure. Every contact you generate through Lab 2's funnel can flow into an opportunity in this pipeline.
+:::
+
+::::{dropdown} Troubleshooting Common Issues
+
+**"+ New Pipeline" button is not visible:**
+Check that you are in the Opportunities section of the left sidebar (not Contacts or Conversations). Some GHL accounts organize this under CRM → Pipelines. If you're using the mobile app, switch to desktop browser for pipeline configuration.
+
+**Stages are saving but showing in the wrong order:**
+GHL allows you to drag and reorder stages in the pipeline builder. After adding all stages, drag them into the correct sequence before saving. If order is wrong after save, click the edit (pencil) icon next to the pipeline and drag to reorder.
+
+**Win probability percentages aren't appearing:**
+Win probability is set per stage in the stage configuration. Click the stage name to expand its settings and look for "Win Probability" or "Stage Probability." This field may be labeled differently depending on your GHL version.
+
+**An opportunity isn't showing the pipeline value in reports:**
+The opportunity must have a numeric Value entered. Opportunities with a $0 value or no value entered are excluded from pipeline revenue calculations. Edit the opportunity and enter the estimated deal value.
+
+**The pipeline shows in "List View" but I want the Kanban board:**
+In the Opportunities view, look for a View toggle (usually top-right) with icons for List, Kanban, and sometimes Calendar. Click the Kanban icon (grid of squares) to switch to the board view where deals appear as draggable cards.
 ::::
-
----
-
-### Step 2 — Add Stages to Your Sales Pipeline
-
-With your Sales Pipeline open, add the following 8 stages using the **"Add Stage"** button. Type each stage name exactly and set the win probability as shown:
-
-| Stage Name | Win Probability |
-|------------|----------------|
-| New Lead | 10% |
-| Contacted | 20% |
-| Qualified | 40% |
-| Proposal Sent | 60% |
-| Negotiating | 75% |
-| Verbal Commit | 90% |
-| Closed Won | 100% |
-| Closed Lost | 0% |
-
-**Note:** In VibeReach, "Won" and "Lost" status may be automatically created system stages. If they already appear, you do not need to add them manually. Add the stages from New Lead through Verbal Commit as custom stages, then use the built-in Won/Lost designations.
-
-**To reorder stages:** Use the drag handle (six-dot icon) to the left of each stage name. Drag stages up or down to match the order in the table above.
-
-**Expected Result:** Your Sales Pipeline now shows 6 custom stages (New Lead through Verbal Commit) plus the system-created Won and Lost exits.
-
-::::{dropdown} Troubleshooting: Probability field not visible?
-If you do not see a probability percentage field when adding stages, look for a small edit icon (pencil) or click directly on the stage name after saving to expand its settings. Win probability may also be configured in the opportunity details rather than at the stage level in some account configurations.
-::::
-
----
-
-### Step 3 — Create Your Onboarding Pipeline
-
-Return to the **Pipelines** tab and click **"+ Add Pipeline"** again.
-
-**Name:** `Onboarding Pipeline`
-
-**Add these 5 stages:**
-
-| Stage Name | Description |
-|------------|-------------|
-| Welcome Sent | Welcome email and onboarding guide delivered |
-| Account Setup | Platform access granted, profile configured |
-| Strategy Call Completed | Kickoff call done, goals documented |
-| First Campaign Live | Initial deliverable launched |
-| 30-Day Review Done | First success review completed |
-
-**Expected Result:** A 5-stage Onboarding Pipeline ready to receive clients the moment they close in your Sales Pipeline.
-
----
-
-### Step 4 — Create Your Renewal Pipeline
-
-Click **"+ Add Pipeline"** one more time.
-
-**Name:** `Renewal Pipeline`
-
-**Add these 5 stages:**
-
-| Stage Name | Description |
-|------------|-------------|
-| Renewal Window Opens | 90 days before contract end |
-| Renewal Conversation Scheduled | Call or meeting booked |
-| Renewal Proposal Sent | New term offer delivered |
-| Renewal Agreed | Verbal commitment to renew |
-| Contract Renewed | New agreement signed |
-
-**Expected Result:** A complete three-pipeline system — Sales, Onboarding, and Renewal — that covers the full customer lifecycle.
-
----
-
-### Step 5 — Create Your First Opportunity
-
-Now you will practice adding an actual opportunity to your pipeline.
-
-**Navigate:** Click **Opportunities** in the left sidebar. Click the **"+ Add Opportunity"** button (usually in the top-right corner of the Opportunities board view).
-
-**Fill in the opportunity form:**
-- **Opportunity Name:** Type a realistic deal name (e.g., "John Smith — Social Media Management")
-- **Contact:** Select or create a contact record for this opportunity
-- **Pipeline:** Select `Sales Pipeline`
-- **Stage:** Select `New Lead`
-- **Deal Value:** Enter a realistic dollar amount for this opportunity (e.g., `$2,400`)
-- **Close Date:** Set a target close date 30 days from today
-- **Assigned To:** Select yourself or a team member
-
-**Click:** Save (or Create Opportunity).
-
-**Expected Result:** A new opportunity card appears in the "New Lead" column of your Sales Pipeline board. The card should show the deal name, the contact name, and the deal value.
-
-::::{dropdown} Troubleshooting: Opportunity not appearing on board?
-If the opportunity was saved but does not appear on the board, check that you are viewing the correct pipeline. Use the pipeline dropdown selector at the top of the board view to switch to "Sales Pipeline." Also verify you are in board view (column layout) rather than list view.
-::::
-
----
-
-### Step 6 — Practice Moving Opportunities Through Stages
-
-Now practice the core mechanic of pipeline management: moving a deal forward.
-
-**Action 1:** On the board view, locate your opportunity card in "New Lead." Click and hold the card, then drag it to the "Contacted" column. Release. The card should snap into position in the new stage.
-
-**Action 2:** Drag the same card from "Contacted" to "Qualified."
-
-**Action 3:** Drag the card from "Qualified" to "Proposal Sent."
-
-After each move, observe how the board updates in real time. Notice that the card retains all its information — deal value, contact name, close date — as it moves through stages.
-
-**Expected Result:** Your opportunity card is now in the "Proposal Sent" column, having traveled through three stages. If your VibeReach account has automation triggered on stage changes, you may see automated actions fire (emails sent, tasks created) as the card moves.
-
-::::{dropdown} Troubleshooting: Drag and drop not working?
-If drag-and-drop is not responsive, try refreshing the browser page and ensuring you are using a desktop browser (not mobile). Alternatively, click on the opportunity card to open its detail view, then use the Stage dropdown inside the record to change the stage manually. The record will update and the card will move on the board.
-::::
-
----
-
-### Step 7 — Run the Morning Stand-Up Ritual
-
-In this final step, you will simulate the 15-minute morning stand-up using your own pipeline.
-
-**Action 1:** On the Opportunities board, look for a **filter** option (usually a funnel icon or "Filter" button near the top). Apply a filter for **"Assigned To: Me"** to see only your opportunities.
-
-**Action 2:** Switch to **list view** if available, and sort by **Last Activity** (ascending) so the least recently touched deals rise to the top.
-
-**Action 3:** Scan the list. Identify:
-- Which deals have had no activity in the last 7 days?
-- Which deals are in late stages (Proposal Sent, Negotiating, Verbal Commit)?
-- What is the total weighted value of your active pipeline?
-
-**Action 4:** Choose your **top 3 opportunities to advance today**. For each one, write a specific action in the notes field of the opportunity record (click the opportunity, then add a note).
-
-**Expected Result:** You have completed a simulated morning pipeline review and identified your three highest-priority revenue activities for the day. You now have a clear, written action plan — not a mental note, not a vague intention.
-
-```{admonition} Expected Lab Outcome
-:class: seealso
-By the end of Lab 3, you should have:
-- Three fully staged pipelines (Sales, Onboarding, Renewal) inside your VibeReach account
-- At least one live opportunity on the Sales Pipeline board
-- Experience moving an opportunity through multiple stages by drag-and-drop
-- A completed morning stand-up simulation with 3 prioritized deals identified
-- A screenshot of your board saved for your lab submission
-```
-
----
 
 ## 3.11 Chapter Takeaways & Reflection Questions
 

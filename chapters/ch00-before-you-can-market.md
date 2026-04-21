@@ -360,214 +360,190 @@ For marketing emails specifically — newsletters, campaigns, automations — yo
 
 ---
 
+
 ## 0.7 Lab 0: Point a Domain, Verify a Sending Domain, and Send Your First Authenticated Email
 
-:::{important}
-**Lab Prerequisites**
-- A domain name (if you do not yet have one, register one at Namecheap for approximately $10–$15; choose a `.com` using your brand name or your own name)
-- Access to your domain registrar's DNS management panel
-- An active VibeReach.io account
-- Approximately 90 minutes of focused time (plus up to 48 hours for DNS propagation)
-:::
+Your domain is the foundation of every marketing campaign you will ever run. Without a properly configured domain and authenticated sending address, your emails land in spam, your funnels break, and your brand looks unprofessional at every customer touchpoint. This lab gives you a fully authenticated, deliverability-ready domain in VibeReach.io — so every campaign you build in this course starts with the best possible infrastructure beneath it.
 
-This lab has eight steps. Follow them in sequence. Each step includes the exact navigation path, what to type, what to expect, and a troubleshooting guide for the most common failure modes.
-
----
-
-### Step 0 — Register or Use an Existing Domain
-
-If you already own a domain, proceed to Step 1. If not:
-
-**Navigation:** Open `namecheap.com` → search your desired domain → add to cart → complete purchase
-
-**What to type:** Choose a domain based on your name or business name. Example: `ernestolee.com` or `clearflowmarketing.com`. Avoid numbers and hyphens.
-
-**Expected Outcome:** You receive a confirmation email from Namecheap. Your domain appears in your Namecheap dashboard under **Domain List**. DNS management is accessible immediately.
-
----
-
-### Step 1 — Log Into Your DNS Provider and Locate DNS Management
-
-**Namecheap path:** Log in → **Domain List** → click **Manage** next to your domain → click **Advanced DNS** tab
-
-**GoDaddy path:** Log in → **My Products** → **DNS** button next to your domain
-
-**Cloudflare path:** Log in → Select your domain from the dashboard → **DNS** → **Records**
-
-**What to expect:** A table showing all existing DNS records for your domain. A fresh domain typically has a few default records added by the registrar. You will be adding to this list.
-
-:::{note}
-Leave default nameserver (NS) records untouched. Delete any default A records or CNAME records that point to a registrar parking page — these will conflict with the records you are about to add.
+:::{admonition} Lab Prerequisites
+:class: note
+Before starting this lab, you need:
+- A domain name you own (register one at Namecheap for approximately $10–$15 if needed; choose a `.com` using your brand or full name)
+- Access to your domain registrar's DNS management panel (Namecheap, GoDaddy, Cloudflare, or similar)
+- An active VibeReach.io sub-account with admin access
+- Approximately 60–90 minutes of focused work (plus up to 48 hours for DNS propagation)
 :::
 
 ---
 
-### Step 2 — Add the A Record Pointing to VibeReach.io
+### Step 1: Add Your Domain to VibeReach.io
 
-An A record maps your root domain to the IP address of the server that will serve your content.
+1. Log in to your VibeReach.io sub-account.
+2. In the left sidebar, click the ⚙️ **Settings** gear icon → **Domains**.
+3. Click the **+ Add Domain** button in the upper right.
+4. In the "Domain Name" field, type your root domain: `yourbusiness.com` (no `www`, no `https://`).
+5. Click **Add Domain**.
+6. The platform displays the IP address you need for your A record. **Copy this IP address** — you need it in Step 2.
 
-**In VibeReach.io:** Navigate to **Settings → Domains → Add Domain** → enter your root domain (e.g., `yourbusiness.com`) → the platform will display the IP address value to use for your A record.
-
-**In your DNS provider, add:**
-
-| Type | Host / Name | Value | TTL |
-|------|-------------|-------|-----|
-| A | `@` | *(IP address shown in VibeReach.io settings)* | 3600 |
-
-**What to type:** In the "Host" field, type `@` (which represents the root domain). In the "Value" or "Points To" field, paste the IP address provided by VibeReach.io.
-
-**Expected Outcome:** The A record appears in your DNS record list. Propagation begins immediately but may take up to 48 hours to be visible globally.
-
-:::{dropdown} Troubleshooting Step 2
-**"I don't see the IP address in VibeReach.io"** — Some platform plans require you to select the domain type (root domain vs. subdomain) before displaying DNS values. Ensure you are entering a root domain (no `www`, no `go.`).
-
-**"There is already an A record for @"** — Delete the existing one first. Registrar default parking pages set A records pointing to their own servers. Replace it with the VibeReach.io IP.
-
-**"My registrar does not use @ for root domain"** — Some registrars use the word `blank` or simply leave the Host field empty to indicate root domain. Check your registrar's documentation.
+:::{admonition} Why This Matters
+:class: tip
+Every funnel and page you build in VibeReach.io is hosted on the platform's servers. The A record you're adding tells the internet that your domain name points to those servers. Without it, your funnel links show broken pages.
 :::
+
+**You'll know you did this right when:** Your domain appears in the Domains list with a "Pending" status and the platform shows you DNS values to copy.
 
 ---
 
-### Step 3 — Add a CNAME for Your Subdomain
+### Step 2: Add DNS Records at Your Registrar
 
-A CNAME creates an alias so a subdomain like `www.yourbusiness.com` or `go.yourbusiness.com` resolves correctly.
+Open your domain registrar in a new browser tab.
 
-**In your DNS provider, add:**
+- **Namecheap:** Domain List → **Manage** → **Advanced DNS** tab
+- **GoDaddy:** My Products → your domain → **DNS**
+- **Cloudflare:** Select domain → **DNS** → **Records**
 
-| Type | Host / Name | Value | TTL |
-|------|-------------|-------|-----|
+First, delete any default A record pointing to a registrar parking page (they conflict). Then add:
+
+| Record Type | Host / Name | Value | TTL |
+|-------------|-------------|-------|-----|
+| A | `@` | *(IP address from Step 1)* | 3600 |
 | CNAME | `www` | `yourbusiness.com` | 3600 |
-| CNAME | `go` | `sites.vibereach.io` | 3600 |
 
-**What to type:** For the `www` CNAME, point it back to your root domain. For a marketing subdomain like `go`, point it to the platform's generic domain as shown in your VibeReach.io settings.
+Click **Save** after each record.
 
-**Expected Outcome:** Both CNAME records appear in your DNS table. Visitors who type `www.yourbusiness.com` are served the same content as `yourbusiness.com`.
+**You'll know you did this right when:** Both records appear in your DNS table. Propagation begins immediately but may take 2–48 hours globally.
 
 ---
 
-### Step 4 — Set Up Your Sending Domain in VibeReach.io
+### Step 3: Set Up Your Email Sending Domain
 
-This step authenticates your domain for *sending* marketing emails. Do not skip it — without this, your emails will land in spam.
-
-**In VibeReach.io:** Navigate to **Settings → Email Services → Dedicated Domain & IP → Add Domain**
-
-**What to type:** Enter your domain (or a subdomain like `mail.yourbusiness.com` for better deliverability isolation). Click **Add & Verify**.
-
-**What the platform shows you:** A set of DNS record values to copy — specifically TXT records for DKIM. These will look something like:
+1. In VibeReach.io: ⚙️ **Settings** → **Email Services** → **Dedicated Domain & IP**.
+2. Click **+ Add Domain**.
+3. For best deliverability, use a subdomain like `mail.yourbusiness.com`. Type it → **Add & Verify**.
+4. The platform generates two DKIM TXT records. They look like:
 
 | Type | Host / Name | Value |
 |------|-------------|-------|
-| TXT | `s1._domainkey` | `v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3...` |
-| TXT | `s2._domainkey` | `v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3...` |
+| TXT | `s1._domainkey` | `v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3...` (long string) |
+| TXT | `s2._domainkey` | `v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3...` (long string) |
 
-**Copy both DKIM TXT record names and values exactly as shown.** Do not modify them. Go to your DNS provider and add them.
+5. **Copy both TXT record names and values exactly** — do not shorten the long key strings.
 
-**Expected Outcome:** Two DKIM TXT records appear in your DNS table. They may take up to 48 hours to propagate.
-
-:::{dropdown} Troubleshooting Step 4
-**"The DKIM value is very long"** — This is expected. DKIM public keys are long strings. If your DNS provider's interface truncates the field, paste the full value anyway — most providers support long TXT records. If you see an error, try wrapping the value in quotation marks.
-
-**"I don't see the Settings → Email Services path"** — Ensure you are inside a sub-account (not the Agency view). In VibeReach.io, domain and email settings are managed at the sub-account level, not the top-level agency dashboard.
+:::{admonition} Why This Matters
+:class: tip
+DKIM adds a cryptographic signature to every email you send. Email providers check it on every incoming message. Without valid DKIM, your campaigns score lower on spam filters and are more likely to land in junk — even for contacts who want to hear from you.
 :::
 
 ---
 
-### Step 5 — Add Your SPF Record
+### Step 4: Add DKIM Records at Your Registrar
 
-SPF authorizes VibeReach.io's mail servers to send email on behalf of your domain.
+Return to your registrar's DNS panel:
 
-**In your DNS provider, add:**
+1. Add Record → select **TXT**
+2. Host field: enter `s1._domainkey` (your registrar may auto-append the domain name)
+3. Value: paste the full DKIM value from VibeReach.io
+4. TTL: 3600 → Save
+5. Repeat for `s2._domainkey`
 
-| Type | Host / Name | Value | TTL |
-|------|-------------|-------|-----|
+**You'll know you did this right when:** Both DKIM TXT records appear in your DNS table.
+
+---
+
+### Step 5: Add Your SPF Record
+
+Add this TXT record at your registrar:
+
+| Type | Host | Value | TTL |
+|------|------|-------|-----|
 | TXT | `@` | `v=spf1 include:_spf.gohighlevel.com ~all` | 3600 |
 
-**Important:** If your domain already has an SPF record (starts with `v=spf1`), do **not** add a second one. Instead, edit the existing record to add `include:_spf.gohighlevel.com` before the `~all` qualifier. DNS allows only one SPF record per hostname, and having two will cause SPF to fail.
-
-:::{warning}
-**The Two-SPF Problem**
-
-Adding a second SPF TXT record instead of merging into the existing one is one of the most common email authentication mistakes. If you see `v=spf1` already in your TXT records for `@`, merge rather than add. Example of a properly merged record: `v=spf1 include:_spf.google.com include:_spf.gohighlevel.com ~all`
+:::{admonition} Critical: The Two-SPF Trap
+:class: warning
+If a TXT record beginning with `v=spf1` already exists for your domain, do NOT add a second one. Two SPF records cause SPF authentication to fail. Instead, **edit the existing record** to add `include:_spf.gohighlevel.com` before the `~all`. Example: `v=spf1 include:_spf.google.com include:_spf.gohighlevel.com ~all`
 :::
 
-**Expected Outcome:** A single TXT record beginning with `v=spf1` exists for your root domain. It includes the VibeReach.io/GHL sending infrastructure.
+**You'll know you did this right when:** Exactly one `v=spf1` TXT record exists for your root domain, and it includes `_spf.gohighlevel.com`.
 
 ---
 
-### Step 6 — Add Your DMARC Record
+### Step 6: Add Your DMARC Record
 
-DMARC enforces your SPF and DKIM policies and enables reporting. Start with a monitoring-only policy (`p=none`) — it observes without blocking, giving you data before you enforce stricter rules.
-
-**In your DNS provider, add:**
-
-| Type | Host / Name | Value | TTL |
-|------|-------------|-------|-----|
+| Type | Host | Value | TTL |
+|------|------|-------|-----|
 | TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:dmarc@yourbusiness.com` | 3600 |
 
-**What to type:** Replace `yourbusiness.com` with your actual domain in the `rua=` portion. This is the email address where DMARC aggregate reports will be sent. You can use any email address you can access — consider creating `dmarc@yourbusiness.com` specifically for this purpose.
+Replace `yourbusiness.com` in the `rua=` address with your actual domain. Start with `p=none` — this monitors without blocking anything. After 30 days of clean reports, upgrade to `p=quarantine`.
 
-**Understanding the policy values:**
-
-| Policy | Meaning | When to Use |
-|--------|---------|-------------|
-| `p=none` | Monitor only, take no action | Start here — get data first |
-| `p=quarantine` | Send failing emails to spam | After 30+ days of clean reports |
-| `p=reject` | Block failing emails entirely | After confirming all legitimate senders are authenticated |
-
-**Expected Outcome:** A TXT record for `_dmarc.yourbusiness.com` appears in your DNS table.
-
----
-
-### Step 7 — Click "Verify" and Wait for Green Checkmarks
-
-**In VibeReach.io:** Navigate back to **Settings → Email Services → Dedicated Domain & IP** → find your domain → click the three-dot menu → select **Verify Domain**.
-
-The platform checks your DNS records in real time. For each record (DKIM, SPF, DMARC), you will see either:
-- ✅ **Green checkmark** — Record found and correctly configured
-- ❌ **Red X** — Record not found or incorrectly formatted
-- 🔄 **Pending** — Still propagating; try again in a few hours
-
-**Expected Outcome:** All three authentication records show green checkmarks. Your domain status changes from "Pending" to "Verified."
-
-:::{dropdown} Troubleshooting Step 7
-**"SPF shows red even though I added the record"** — Check for the two-SPF problem (two separate TXT records starting with `v=spf1` for the same hostname). Merge them into one.
-
-**"DKIM shows red after 48 hours"** — The DKIM TXT record name must include the exact selector prefix shown in VibeReach.io (e.g., `s1._domainkey`). Some registrars automatically append your domain to the record name — if the platform showed `s1._domainkey`, your registrar may have stored it as `s1._domainkey.yourbusiness.com.yourbusiness.com`. In this case, enter only `s1._domainkey` in the host field.
-
-**"DMARC shows red"** — Verify the host field is exactly `_dmarc` (with the underscore). Some registrars require `_dmarc.yourbusiness.com` in the host field instead of just `_dmarc`. Check your registrar's format.
+:::{admonition} Why This Matters
+:class: tip
+DMARC enforces your SPF and DKIM policies and alerts you when someone tries to impersonate your domain. Without it, phishing attacks using your domain name are easier to execute — and your reputation with receiving mail servers is lower.
 :::
 
 ---
 
-### Step 8 — Send a Test Email and Verify It Passes Spam Filters
+### Step 7: Verify Your Domain in VibeReach.io
 
-**In VibeReach.io:** Navigate to any email campaign or create a quick test campaign. Before sending to real contacts, use `mail-tester.com` to verify authentication.
+1. **Settings → Email Services → Dedicated Domain & IP**
+2. Find your domain → click the ⋮ three-dot menu → **Verify Domain**
+3. The platform checks your records live:
+   - ✅ Green checkmark — record found, correctly formatted
+   - ❌ Red X — missing or incorrectly formatted
+   - 🔄 Spinning — still propagating; retry in 1–4 hours
 
-**Procedure:**
-1. Open `mail-tester.com` in a browser
-2. Copy the unique test email address shown (e.g., `test-abc123@mail-tester.com`)
-3. In VibeReach.io, send a test email to that address from your verified domain
-4. Return to `mail-tester.com` and click **"Check your score"**
-5. Review the results — look for a score of 8/10 or higher
+Do not proceed until all three records (DKIM ×2, SPF, DMARC) show green.
 
-**What a perfect (or near-perfect) score tells you:**
-- SPF: PASS
-- DKIM: PASS
-- DMARC: PASS
-- No blacklist hits
-- Clean message structure
-
-:::{figure} ../images/ch00-deliverability-score.png
-:label: fig-ch00-deliverability
-:alt: Email deliverability score dashboard showing high score with all authentication checks passing
-:width: 70%
-:align: center
-A properly authenticated domain scores 8–10 on mail-tester.com. Lower scores indicate specific configuration issues the tool will identify by category.
-:::
-
-**Expected Outcome:** Your email receives a score of 8/10 or higher. All authentication checks pass. You have a fully authenticated sending domain.
+**You'll know you did this right when:** All authentication indicators show green and your domain status reads "Verified."
 
 ---
+
+### Step 8: Score Your Email With mail-tester.com
+
+1. Open [mail-tester.com](https://mail-tester.com) — copy the unique test address shown.
+2. In VibeReach.io, create a test email → send it to the mail-tester address using your verified sending domain.
+3. Return to mail-tester.com → **Check your score**.
+4. Target 8/10 or higher. All three should read PASS: SPF ✅ · DKIM ✅ · DMARC ✅
+
+**You'll know you did this right when:** Your score is 8/10 or higher with no authentication failures.
+
+---
+
+:::{admonition} Expected Outcome
+:class: tip
+Verify each item before moving to Chapter 1:
+
+- ☐ Domain added to VibeReach.io with "Verified" status
+- ☐ A record and www CNAME present in registrar DNS panel
+- ☐ Both DKIM TXT records added; showing green in VibeReach.io
+- ☐ Single SPF record exists with `_spf.gohighlevel.com` include
+- ☐ DMARC TXT record at `_dmarc.yourbusiness.com`
+- ☐ All authentication indicators green in VibeReach.io
+- ☐ mail-tester.com score 8/10 or higher
+- ☐ Verified sending address configured in sub-account settings
+
+You now have a fully authenticated email infrastructure. Every campaign you send from this account has maximum deliverability.
+:::
+
+::::{dropdown} Troubleshooting Common Issues
+
+**All records show red Xs immediately after adding them:**
+DNS propagation takes time — up to 48 hours globally. Wait at least 2 hours, then click Verify again. Use [dnschecker.org](https://dnschecker.org) to check global propagation status for each record type.
+
+**DKIM still fails after 48 hours:**
+The most common cause is your registrar auto-doubling the domain name in the host field. If you entered `s1._domainkey` and your registrar stored it as `s1._domainkey.yourbusiness.com.yourbusiness.com`, delete it and re-enter with just `s1._domainkey`. Check what the registrar actually stored vs. what you typed.
+
+**SPF shows red even though I added the record:**
+You likely have two SPF records. Check your DNS panel for any other TXT record beginning with `v=spf1` at the `@` host. Delete the duplicate and merge both `include:` directives into one record.
+
+**DMARC shows red:**
+The host field must be exactly `_dmarc` (with the underscore). Some registrars store this differently — check whether `_dmarc.yourbusiness.com` resolves. Also verify the value starts exactly with `v=DMARC1;` — no extra spaces.
+
+**Settings → Email Services is not visible:**
+You're likely in the Agency view, not a sub-account. In VibeReach.io, email sending domains are sub-account level settings. Click into a sub-account from the agency dashboard first.
+
+**Mail-tester score below 7 despite passing SPF/DKIM/DMARC:**
+Review the full scorecard. Common causes: your IP is on a shared blacklist, the test email content contains spammy phrases, or the HTML is malformed. Each flagged item links to specific remediation instructions.
+::::
 
 ## 0.8 Case Study: The $40,000 Lost Invoice
 
