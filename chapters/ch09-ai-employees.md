@@ -416,42 +416,6 @@ The agent's opening line: "Hi, you've reached [Location Name]. I'm the virtual r
 
 That sentence, spoken by software at 10:47 PM, booked 31 people who might otherwise have called someone else.
 
----
-
-## 9.11 Chapter Quiz
-
-**1.** Which GHL AI Employee component handles inbound phone calls?
-a) Content AI · b) Conversation AI · **c) Voice AI ✓** · d) Workflow AI
-
-**2.** Suggestive Mode in Conversation AI means the AI:
-a) Sends automatically · **b) Drafts for human review ✓** · c) Calls the lead · d) Builds workflows
-
-**3.** Where is the Voice AI Knowledge Base configured?
-a) Marketing → Funnels · **b) Settings → AI Employee → Voice AI → [Agent] → Knowledge Base ✓** · c) Automation → Workflows · d) Contacts → Smart Lists
-
-**4.** Human escalation in Conversation AI should trigger when:
-a) The AI answers correctly three times · **b) Caller requests human, repeated misunderstandings, or keywords detected ✓** · c) The contact hasn't replied · d) Never
-
-**5.** Which Review AI mode publishes responses without human review?
-a) Suggestive · **b) Auto-Pilot ✓** · c) Manual · d) Hybrid
-
-**6.** The Four-Layer AI Training Framework includes Identity, Knowledge, Goals, and:
-a) Pricing · **b) Guardrails ✓** · c) Integrations · d) Channels
-
-**7.** Voice AI in GHL handles how many simultaneous calls per assigned number?
-a) Unlimited · b) Ten · **c) One ✓** · d) Five
-
-**8.** After an AI agent books an appointment, it appears in:
-a) A separate AI calendar · b) Google Calendar only · **c) Your configured GHL calendar ✓** · d) The contact's email only
-
-**9.** Content AI appears inside which GHL builders?
-a) Contacts only · b) Pipelines only · **c) Funnel builder, email composer, social planner ✓** · d) Calendar only
-
-**10.** In the Atlanta case study, what percentage of after-hours Voice AI calls resulted in booked appointments?
-a) 15% · b) 22% · **c) 36% ✓** · d) 50%
-
----
-
 ## 🎯 Your Turn: Apply It to Your Business
 
 You now have the blueprint for a full AI workforce. The question is not whether your business can benefit — it can. The question is where to start.

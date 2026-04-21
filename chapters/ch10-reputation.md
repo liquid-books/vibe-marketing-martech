@@ -342,48 +342,6 @@ Here's how to make your reputation work proactively:
 
 **Review Volume as a Credibility Signal.** There is a volume threshold above which your star rating becomes an anchor — a visible symbol that hundreds of people have trusted you. For local businesses, 50+ reviews changes the psychology. 100+ reviews is a moat. Build review volume systematically and the star rating becomes self-reinforcing: more reviews attract more customers, who leave more reviews.
 
----
-
-## 10.11 Chapter Quiz
-
-**1.** What percentage of consumers read online reviews before making a purchasing decision, per BrightLocal's 2025 survey?
-a) 62% · b) 74% · **c) 87% ✓** · d) 95%
-
-**2.** The ideal timing for sending a review request after service is:
-a) Immediately after service · **b) 48–72 hours after service ✓** · c) Two weeks after service · d) Monthly batch sends
-
-**3.** Where do you connect Google Business Profile in GHL?
-a) Settings → Phone Numbers · **b) Reputation → Settings → Integrations → Google Business Profile ✓** · c) Marketing → Ads · d) Contacts → Custom Fields
-
-**4.** The correct order of a negative review response is:
-a) Refund offer → explanation → apology  
-b) Argument → apology → redirect  
-**c) Acknowledge → empathy → invite private resolution ✓**  
-d) Explanation → apology → discount
-
-**5.** What is the maximum number of follow-up review requests recommended?
-a) Zero · **b) One ✓** · c) Three · d) As many as needed
-
-**6.** Review Widgets in GHL can be embedded in:
-a) Only your GHL funnels  
-**b) Any website or funnel page via HTML embed code ✓**  
-c) Only GHL email templates  
-d) Only the Conversations inbox
-
-**7.** Which metric measures the percentage of reviews that received a public response?
-a) Review Volume · b) Rating Distribution · **c) Response Rate ✓** · d) Request Conversion Rate
-
-**8.** The If/Else gate in the review request workflow exists to:
-a) Delay the review request · **b) Prevent review requests from going to contacts with active complaints ✓** · c) Double-check the star rating · d) Assign the contact to a team member
-
-**9.** A one-star increase in Yelp rating is associated with what revenue increase per Harvard Business School research?
-a) 1–2% · b) 3–4% · **c) 5–9% ✓** · d) 15–20%
-
-**10.** Google's recommendation is to respond to what percentage of reviews?
-a) 50% · b) 75% · c) Reviews above 3 stars only · **d) 100% ✓**
-
----
-
 ## 🎯 Your Turn: Apply It to Your Business
 
 Your reputation is happening right now, whether you're managing it or not. Every completed service is an opportunity to build social proof. Every ignored review is a missed chance to demonstrate your business is attentive and professional.

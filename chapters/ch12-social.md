@@ -433,63 +433,6 @@ The Social Planner gives you the infrastructure to publish consistently. The con
 
 **Use platform-native features when the API supports them.** Stories, Reels, YouTube Shorts — these formats consistently receive preferential algorithmic treatment because platforms want their users engaged in their newest features. Whenever you can publish in a native format through GHL's Social Planner, do so.
 
----
-
-## 12.11 Chapter Quiz
-
-**1.** Which social platform requires you to connect a Facebook Page before you can connect it to GHL Social Planner?
-a) LinkedIn · **b) Instagram ✓** · c) TikTok · d) Pinterest
-
-**2.** Google Business Profile posts expire after how many days unless set as Events or Offers?
-a) 3 days · **b) 7 days ✓** · c) 14 days · d) 30 days
-
-**3.** The Content Queue in GHL Social Planner:
-a) Generates all post content automatically  
-**b) Distributes scheduled content across your defined posting windows ✓**  
-c) Imports posts from other platforms  
-d) Archives published posts for reuse
-
-**4.** Which LinkedIn account types can be connected to GHL Social Planner?
-a) Personal profiles only  
-b) Company Pages only  
-**c) Both personal profiles and Company Pages ✓**  
-d) Neither — LinkedIn is not supported
-
-**5.** The Content Approval Workflow in Social Planner is most critical for:
-a) Scheduling daily GBP posts  
-**b) Regulated industries and agency-client content review ✓**  
-c) Auto-generating captions  
-d) Bulk importing posts via CSV
-
-**6.** TikTok's Social Planner connection requires:
-a) A personal TikTok account  
-**b) A TikTok Business Account ✓**  
-c) A Facebook Page link  
-d) A YouTube channel
-
-**7.** What is a key limitation of GHL's Social Planner analytics compared to native platform analytics?
-a) GHL doesn't show any metrics  
-**b) Detailed audience demographics and advanced metrics (Reel completion, Story views) are not fully available ✓**  
-c) GHL only shows LinkedIn data  
-d) Analytics only refresh monthly
-
-**8.** When a team member clicks "Submit for Approval" instead of scheduling a post directly, what happens next?
-a) The post publishes immediately  
-b) The post is deleted  
-**c) A designated approver receives a notification to review and approve or request changes ✓**  
-d) The post goes to the Content Queue
-
-**9.** GBP posts should be scheduled at what minimum frequency for local SEO benefit?
-a) Once per month · b) Once per quarter · **c) Once per week ✓** · d) Daily
-
-**10.** For agencies, GHL's Social Planner architecture benefits multi-client management because:
-a) One set of platform credentials serves all clients  
-b) All client content is visible in one combined calendar  
-**c) Each client's platforms are connected in their own sub-account, isolating data and permissions ✓**  
-d) GHL auto-generates content for all clients simultaneously
-
----
-
 ## 🎯 Your Turn: Apply It to Your Business
 
 Social media consistency is one of the most common broken promises in small business marketing — not for lack of effort or desire, but for lack of infrastructure. The Social Planner removes the infrastructure problem. Now apply it to your business.

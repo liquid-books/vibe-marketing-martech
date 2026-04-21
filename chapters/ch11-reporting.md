@@ -380,66 +380,6 @@ The cost of building 40+ client dashboards: approximately one afternoon's work u
 
 The agency's operations lead summarized it well: "We were generating great results but delivering terrible evidence. The dashboard didn't change our results — it changed our clients' experience of them."
 
----
-
-## 11.11 Chapter Quiz
-
-**1.** What does "First Attribution" measure in GHL reporting?
-a) The last touchpoint before conversion  
-**b) The first touchpoint that brought a contact into the system ✓**  
-c) The most frequently visited page  
-d) The highest-revenue campaign
-
-**2.** Where do you connect Google Ads to GHL?
-a) Marketing → Ads  
-**b) Settings → Integrations → Google Ads ✓**  
-c) Reporting → Attribution  
-d) Automation → Workflows
-
-**3.** Facebook Conversions API (CAPI) is used to:
-a) Create Facebook ads from GHL  
-**b) Send conversion events server-to-server, improving tracking accuracy ✓**  
-c) Import Facebook contacts  
-d) Schedule Facebook posts
-
-**4.** A no-show rate above what percentage indicates a reminder sequence problem?
-a) 5% · **b) 15% ✓** · c) 30% · d) 50%
-
-**5.** What is the primary benefit of GHL's shareable read-only dashboard links for agencies?
-a) They allow clients to edit the data  
-**b) They give clients real-time visibility into their account performance without needing a GHL login ✓**  
-c) They export data to Excel automatically  
-d) They replace the need for ad tracking
-
-**6.** Which attribution model gives credit to the touchpoint that closes the deal?
-a) First Attribution  
-**b) Last Attribution ✓**  
-c) Linear Attribution  
-d) Time Decay Attribution
-
-**7.** For accurate attribution in GHL, which tracking mechanism must be properly configured?
-a) Facebook Pixel only  
-**b) UTM parameters on every marketing link ✓**  
-c) Phone number tracking only  
-d) GHL automatically assigns attribution without any setup
-
-**8.** What does the Conversation Report's "First Response Time" metric tell you?
-a) How long a contact waited before submitting a form  
-**b) How long it took your team to respond to the first message in a conversation ✓**  
-c) The average call duration  
-d) The time between booking and appointment
-
-**9.** In the Digital Velocity case study, deploying client dashboards extended average retention from:
-a) 6 to 12 months · **b) 11 to 19 months ✓** · c) 15 to 24 months · d) 8 to 14 months
-
-**10.** GHL's Conversion Import for Google Ads allows you to:
-a) Import Google reviews  
-**b) Send GHL contact creation and pipeline events back to Google as conversion signals ✓**  
-c) Import Google contacts  
-d) Create Google Ads from within GHL
-
----
-
 ## 🎯 Your Turn: Apply It to Your Business
 
 Data only changes behavior when you look at it regularly, understand what it means, and make decisions from it. This section is about building that habit.
