@@ -43,9 +43,9 @@ a) Increasing your monthly costs · **b) Damaging deliverability and sender cred
 
 **a) SPF TXT Record ✓** · b) A Record · c) MX Record · d) CNAME for web redirect
 
-**10.** After connecting your domain to VibeReach.io, the setting beginners most commonly miss is:
+**10.** After adding DNS records at their registrar, the step beginners most commonly miss when connecting a domain to VibeReach.io is:
 
-a) Enabling HTTPS on the domain · b) Adding the domain to Google Search Console · **c) Configuring the subdomain DNS record (CNAME) that points to the platform ✓** · d) Setting the MX record to VibeReach servers
+a) Enabling HTTPS on the domain · b) Adding the domain to Google Search Console · c) Setting a lower TTL value · **d) Registering the domain inside the platform's Settings → Domains dashboard so the platform associates the domain with their account ✓**
 
 ---
 
@@ -227,9 +227,9 @@ a) \$42,000 · b) \$97,000 · **c) \$186,000 ✓** · d) \$312,000
 
 ## Chapter 5 Quiz — The Phone System
 
-**2.** Which call feature plays a whispered message to the agent before they are connected to the caller?
+**2.** The Whisper feature in VibeReach.io allows a supervisor to:
 
-a) Barge · **b) Whisper ✓** · c) IVR · d) Voicemail Drop
+a) Record a greeting that plays to callers on hold · b) Intercept a call and take it over completely · **c) Speak directly to the agent during a live call without the caller hearing a word ✓** · d) Drop a pre-recorded message into a voicemail box
 
 **1.** VoIP (Voice over Internet Protocol) calls differ from traditional phone calls because they:
 
@@ -391,9 +391,9 @@ a) 0.5% + \$0.10 · **b) 2.9% + \$0.30 ✓** · c) 5% flat · d) 1.5% + \$0.15
 
 a) A contact cancels a subscription · **b) A recurring Stripe charge is declined ✓** · c) An invoice is opened but not paid · d) A contact's email bounces
 
-**9.** For tax compliance, VibeReach.io integrates with which platform to automate sales tax calculation?
+**9.** Which built-in Stripe feature automates sales tax calculation and applies the correct rate based on the buyer's location?
 
-a) QuickBooks · b) Xero · **c) TaxJar or Stripe Tax ✓** · d) FreshBooks
+a) Stripe Radar · b) Stripe Atlas · **c) Stripe Tax ✓** · d) Stripe Billing
 
 **10.** In the Chapter 8 case study, how quickly did the MCA broker collect funds after replacing manual underwriting with Plaid verification?
 
