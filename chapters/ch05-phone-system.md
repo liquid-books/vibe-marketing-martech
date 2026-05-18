@@ -685,56 +685,58 @@ Note: This calculation assumes all other variables remain equal. In practice, li
 
 ## Glossary
 
-**A2P 10DLC**
-: Application-to-Person 10-Digit Long Code — the carrier registration framework for business SMS in the United States. Required before high-volume business texting can occur from local numbers.
+:::{glossary}
+A2P 10DLC
+  Application-to-Person 10-Digit Long Code — the carrier registration framework for business SMS in the United States. Required before high-volume business texting can occur from local numbers.
 
-**Barge**
-: A call monitoring feature that allows a supervisor to join a live call as an audible participant, heard by both the agent and the caller.
+A2P Registration
+  The formal process of registering a business brand and messaging campaign with carriers to enable commercial SMS messaging at scale.
 
-**Call Flow**
-: A configurable sequence of actions that defines how an inbound call is handled — including greetings, IVR menus, routing decisions, and fallback behaviors.
+Barge
+  A call monitoring feature that allows a supervisor to join a live call as an audible participant, heard by both the agent and the caller.
 
-**Codec**
-: A software algorithm that compresses and decompresses audio data for transmission over IP networks. Common VoIP codecs include G.711 and G.729.
+Call Flow
+  A configurable sequence of actions that defines how an inbound call is handled — including greetings, IVR menus, routing decisions, and fallback behaviors.
 
-**DTMF (Dual-Tone Multi-Frequency)**
-: The technical term for the tones produced when a caller presses keys on a phone keypad. IVR systems detect DTMF tones to interpret caller menu selections.
+Codec
+  A software algorithm that compresses and decompresses audio data for transmission over IP networks. Common VoIP codecs include G.711 and G.729.
 
-**IVR (Interactive Voice Response)**
-: An automated system that plays recorded prompts and collects caller input via keypad presses, routing calls without a live operator.
+DTMF (Dual-Tone Multi-Frequency)
+  The technical term for the tones produced when a caller presses keys on a phone keypad. IVR systems detect DTMF tones to interpret caller menu selections.
 
-**Local Presence**
-: The practice of using phone numbers with area codes matching a target geographic market to increase answer rates.
+IVR (Interactive Voice Response)
+  An automated system that plays recorded prompts and collects caller input via keypad presses, routing calls without a live operator.
 
-**Power Dialer**
-: An outbound calling system that automatically dials the next contact when the previous call ends, maximizing agent talk time.
+Local Presence
+  The practice of using phone numbers with area codes matching a target geographic market to increase answer rates.
 
-**PBX (Private Branch Exchange)**
-: A telephone switching system that manages internal and external calls for a business. Cloud PBX performs this function without on-premises hardware.
+PBX (Private Branch Exchange)
+  A telephone switching system that manages internal and external calls for a business. Cloud PBX performs this function without on-premises hardware.
 
-**RTP (Real-time Transport Protocol)**
-: The protocol that carries actual audio data during a VoIP call, separate from the signaling protocol (SIP).
+Power Dialer
+  An outbound calling system that automatically dials the next contact when the previous call ends, maximizing agent talk time.
 
-**SIP (Session Initiation Protocol)**
-: The signaling protocol used to initiate, maintain, and terminate VoIP calls.
+RTP (Real-time Transport Protocol)
+  The protocol that carries actual audio data during a VoIP call, separate from the signaling protocol (SIP).
 
-**Sticky Routing**
-: A routing strategy that connects returning callers to the same agent they previously spoke with, using CRM contact history for identification.
+SIP (Session Initiation Protocol)
+  The signaling protocol used to initiate, maintain, and terminate VoIP calls.
 
-**TCPA (Telephone Consumer Protection Act)**
-: The U.S. federal law governing telephone marketing, including rules on consent, calling hours, automated dialing, and the Do Not Call registry.
+Sticky Routing
+  A routing strategy that connects returning callers to the same agent they previously spoke with, using CRM contact history for identification.
 
-**Voicemail Drop**
-: A feature allowing sales reps to deposit a pre-recorded voicemail message with a single click, without waiting for the full voicemail recording process.
+TCPA (Telephone Consumer Protection Act)
+  The U.S. federal law governing telephone marketing, including rules on consent, calling hours, automated dialing, and the Do Not Call registry.
 
-**VoIP (Voice over Internet Protocol)**
-: Technology that transmits voice calls as digital data over the internet rather than through traditional telephone network circuits.
+Voicemail Drop
+  A feature allowing sales reps to deposit a pre-recorded voicemail message with a single click, without waiting for the full voicemail recording process.
 
-**Whisper**
-: A call monitoring feature that allows a supervisor to speak to the agent during a live call without the caller hearing the supervisor.
+VoIP (Voice over Internet Protocol)
+  Technology that transmits voice calls as digital data over the internet rather than through traditional telephone network circuits.
 
-**A2P Registration**
-: The formal process of registering a business brand and messaging campaign with carriers to enable commercial SMS messaging at scale.
+Whisper
+  A call monitoring feature that allows a supervisor to speak to the agent during a live call without the caller hearing the supervisor.
+:::
 
 ---
 

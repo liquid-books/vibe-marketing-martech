@@ -832,59 +832,61 @@ The re-permission campaign itself must be structured carefully — a single, cle
 
 ## Glossary
 
-**Activity Timeline**
-: A chronological log attached to each Contact record, automatically populated with every interaction the system mediates — emails sent and received, pages visited, forms submitted, calls logged, and notes added.
+:::{glossary}
+Activity Timeline
+  A chronological log attached to each Contact record, automatically populated with every interaction the system mediates — emails sent and received, pages visited, forms submitted, calls logged, and notes added.
 
-**Attract**
-: The first of the four heartbeats of Vibe Marketing; encompasses all activities that bring new individuals into awareness of an offer and draw them toward the database.
+Attract
+  The first of the four heartbeats of Vibe Marketing; encompasses all activities that bring new individuals into awareness of an offer and draw them toward the database.
 
-**CAN-SPAM**
-: The primary U.S. federal law governing commercial email. Requires functional unsubscribe mechanisms, honest sender identification, and a physical address; allows email without prior consent but mandates prompt opt-out processing.
+CAN-SPAM
+  The primary U.S. federal law governing commercial email. Requires functional unsubscribe mechanisms, honest sender identification, and a physical address; allows email without prior consent but mandates prompt opt-out processing.
 
-**Company Object**
-: A data record representing an organizational entity, connected to one or more Contact records via association links and role labels; essential for B2B account-level marketing.
+Company Object
+  A data record representing an organizational entity, connected to one or more Contact records via association links and role labels; essential for B2B account-level marketing.
 
-**Contact Record**
-: The canonical, unified representation of a single individual in a marketing platform, serving as the single source of truth for all data, communications, and behavioral history.
+Contact Record
+  The canonical, unified representation of a single individual in a marketing platform, serving as the single source of truth for all data, communications, and behavioral history.
 
-**Convert**
-: The third of the four heartbeats of Vibe Marketing; the phase in which a contact makes a purchasing commitment, completing the transition from prospect to customer.
+Convert
+  The third of the four heartbeats of Vibe Marketing; the phase in which a contact makes a purchasing commitment, completing the transition from prospect to customer.
 
-**Custom Field**
-: A user-defined data field added to a Contact or Company record to capture business-specific information not covered by system defaults.
+Custom Field
+  A user-defined data field added to a Contact or Company record to capture business-specific information not covered by system defaults.
 
-**Do Not Disturb**
-: A setting that prevents automated messages from being delivered during specified time windows, protecting deliverability and contact satisfaction.
+Do Not Disturb
+  A setting that prevents automated messages from being delivered during specified time windows, protecting deliverability and contact satisfaction.
 
-**Engage**
-: The second of the four heartbeats of Vibe Marketing; the process of educating, nurturing, and building trust with contacts who are not yet ready to buy.
+Engage
+  The second of the four heartbeats of Vibe Marketing; the process of educating, nurturing, and building trust with contacts who are not yet ready to buy.
 
-**Frankenstein Stack**
-: A marketing technology architecture composed of multiple disconnected point-solution tools, generating data fragmentation, attribution blindness, and automation fragmentation.
+Frankenstein Stack
+  A marketing technology architecture composed of multiple disconnected point-solution tools, generating data fragmentation, attribution blindness, and automation fragmentation.
 
-**Funnel**
-: One of the Three Pillars; the designed pathway a prospect travels from first awareness to becoming a captured contact, including landing pages, opt-in forms, and lead magnets.
+Funnel
+  One of the Three Pillars; the designed pathway a prospect travels from first awareness to becoming a captured contact, including landing pages, opt-in forms, and lead magnets.
 
-**GDPR (General Data Protection Regulation)**
-: The European Union's comprehensive data protection law requiring a lawful basis for data processing and granting individuals rights to access, correct, and delete their data.
+GDPR (General Data Protection Regulation)
+  The European Union's comprehensive data protection law requiring a lawful basis for data processing and granting individuals rights to access, correct, and delete their data.
 
-**Pipeline**
-: One of the Three Pillars; the structured representation of a sales process consisting of named stages through which deals progress from qualification to closed revenue.
+Pipeline
+  One of the Three Pillars; the structured representation of a sales process consisting of named stages through which deals progress from qualification to closed revenue.
 
-**Retain**
-: The fourth of the four heartbeats of Vibe Marketing; the phase focused on maximizing customer lifetime value through proactive engagement, satisfaction monitoring, and referral generation.
+Retain
+  The fourth of the four heartbeats of Vibe Marketing; the phase focused on maximizing customer lifetime value through proactive engagement, satisfaction monitoring, and referral generation.
 
-**Smart List**
-: A dynamically evaluated contact segment defined by filter conditions connected by AND/OR Boolean logic; automatically includes contacts who qualify and removes those who do not.
+Smart List
+  A dynamically evaluated contact segment defined by filter conditions connected by AND/OR Boolean logic; automatically includes contacts who qualify and removes those who do not.
 
-**Tag**
-: A categorical label applied to a Contact record to indicate group membership, behavioral history, or campaign association; tags are dynamic and form the primary vocabulary for segmentation.
+Tag
+  A categorical label applied to a Contact record to indicate group membership, behavioral history, or campaign association; tags are dynamic and form the primary vocabulary for segmentation.
 
-**TCPA (Telephone Consumer Protection Act)**
-: The primary U.S. federal law governing telephone and SMS marketing; requires explicit prior written consent before sending marketing text messages.
+TCPA (Telephone Consumer Protection Act)
+  The primary U.S. federal law governing telephone and SMS marketing; requires explicit prior written consent before sending marketing text messages.
 
-**Workflow**
-: One of the Three Pillars; a configured sequence of triggers, conditions, and actions that automates the system's response to contact behavior without human intervention.
+Workflow
+  One of the Three Pillars; a configured sequence of triggers, conditions, and actions that automates the system's response to contact behavior without human intervention.
+:::
 
 ---
 

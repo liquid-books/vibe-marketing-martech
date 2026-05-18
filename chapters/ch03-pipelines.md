@@ -727,62 +727,64 @@ Trigger for Renewal: No box opened / survey not submitted within 30 days of deli
 
 ## Glossary
 
-**Aging deal**
-: An opportunity that has not had any logged activity (call, email, note, stage change) within a defined time window, typically 7 or more days. Aging deals are a key indicator of pipeline health deterioration.
+:::{glossary}
+Aging deal
+  An opportunity that has not had any logged activity (call, email, note, stage change) within a defined time window, typically 7 or more days. Aging deals are a key indicator of pipeline health deterioration.
 
-**Board view**
-: The Kanban-style column layout of a CRM pipeline, where opportunity cards are displayed in vertical columns representing stages. Contrasted with list view, which displays opportunities in a sortable table.
+Board view
+  The Kanban-style column layout of a CRM pipeline, where opportunity cards are displayed in vertical columns representing stages. Contrasted with list view, which displays opportunities in a sortable table.
 
-**Churn**
-: The loss of an existing customer, typically measured as a rate (e.g., 5% monthly churn). A Renewal Pipeline is specifically designed to reduce churn by proactively managing the renewal conversation.
+Churn
+  The loss of an existing customer, typically measured as a rate (e.g., 5% monthly churn). A Renewal Pipeline is specifically designed to reduce churn by proactively managing the renewal conversation.
 
-**Closed Lost**
-: The terminal stage designation for an opportunity that did not result in a sale. Marking a deal Closed Lost with a loss reason is a data-collection practice, not a judgment of the salesperson.
+Closed Lost
+  The terminal stage designation for an opportunity that did not result in a sale. Marking a deal Closed Lost with a loss reason is a data-collection practice, not a judgment of the salesperson.
 
-**Closed Won**
-: The terminal stage designation for an opportunity that converted to a sale. In VibeReach, Closed Won can trigger automated onboarding workflows and new opportunity creation in the Onboarding Pipeline.
+Closed Won
+  The terminal stage designation for an opportunity that converted to a sale. In VibeReach, Closed Won can trigger automated onboarding workflows and new opportunity creation in the Onboarding Pipeline.
 
-**CRM (Customer Relationship Management)**
-: A platform that centralizes contact data, opportunity tracking, communication history, and workflow automation for a business's customer relationships.
+CRM (Customer Relationship Management)
+  A platform that centralizes contact data, opportunity tracking, communication history, and workflow automation for a business's customer relationships.
 
-**Deal aging heatmap**
-: A visual representation that maps opportunity cards against time-since-last-activity, using color coding (green/yellow/orange/red) to identify deals at different levels of staleness risk.
+Deal aging heatmap
+  A visual representation that maps opportunity cards against time-since-last-activity, using color coding (green/yellow/orange/red) to identify deals at different levels of staleness risk.
 
-**Deal value**
-: The estimated revenue associated with a specific opportunity if it closes successfully. Used in pipeline forecasting and prioritization.
+Deal value
+  The estimated revenue associated with a specific opportunity if it closes successfully. Used in pipeline forecasting and prioritization.
 
-**Forecasting**
-: The process of projecting future revenue based on current pipeline data. The most reliable forecasting method multiplies deal value by win probability for each open opportunity and sums the results.
+Forecasting
+  The process of projecting future revenue based on current pipeline data. The most reliable forecasting method multiplies deal value by win probability for each open opportunity and sums the results.
 
-**Kanban**
-: A visual workflow management system originating from Toyota's manufacturing process (1948), in which work items are represented as cards moving through columns that represent stages of completion.
+Kanban
+  A visual workflow management system originating from Toyota's manufacturing process (1948), in which work items are represented as cards moving through columns that represent stages of completion.
 
-**Loss reason**
-: A categorical label applied to a Closed Lost opportunity that identifies why the deal did not close (e.g., Non-Responsive, Went with Competitor, Budget Eliminated). Loss reason data informs product, marketing, and sales coaching decisions.
+Loss reason
+  A categorical label applied to a Closed Lost opportunity that identifies why the deal did not close (e.g., Non-Responsive, Went with Competitor, Budget Eliminated). Loss reason data informs product, marketing, and sales coaching decisions.
 
-**Onboarding Pipeline**
-: A CRM pipeline designed to track and manage the client experience from contract signing through successful delivery of initial service. Starts where the Sales Pipeline ends.
+Onboarding Pipeline
+  A CRM pipeline designed to track and manage the client experience from contract signing through successful delivery of initial service. Starts where the Sales Pipeline ends.
 
-**Opportunity**
-: A specific potential transaction in a CRM system, associated with a contact, assigned to a pipeline stage, and carrying a deal value and close date. An opportunity is distinct from a contact.
+Opportunity
+  A specific potential transaction in a CRM system, associated with a contact, assigned to a pipeline stage, and carrying a deal value and close date. An opportunity is distinct from a contact.
 
-**Pipeline**
-: A structured sequence of stages in a CRM system that models a specific customer journey or business motion. A business typically operates multiple parallel pipelines (Sales, Onboarding, Renewal).
+Pipeline
+  A structured sequence of stages in a CRM system that models a specific customer journey or business motion. A business typically operates multiple parallel pipelines (Sales, Onboarding, Renewal).
 
-**Pipeline hygiene**
-: The ongoing discipline of keeping pipeline data current, accurate, and actionable — including regular review of aging deals, consistent stage-movement documentation, and timely marking of Lost opportunities.
+Pipeline hygiene
+  The ongoing discipline of keeping pipeline data current, accurate, and actionable — including regular review of aging deals, consistent stage-movement documentation, and timely marking of Lost opportunities.
 
-**Renewal Pipeline**
-: A CRM pipeline designed to manage the customer retention conversation, typically beginning 60–90 days before a contract or subscription expires.
+Renewal Pipeline
+  A CRM pipeline designed to manage the customer retention conversation, typically beginning 60–90 days before a contract or subscription expires.
 
-**Stage**
-: A named position within a pipeline representing a specific, verifiable milestone in the deal's progress. Best defined by completed past-tense actions rather than ongoing states.
+Stage
+  A named position within a pipeline representing a specific, verifiable milestone in the deal's progress. Best defined by completed past-tense actions rather than ongoing states.
 
-**Weighted pipeline**
-: A forecast methodology in which each opportunity's deal value is multiplied by the win probability of its current stage, and the results are summed to produce a probability-adjusted revenue projection.
+Weighted pipeline
+  A forecast methodology in which each opportunity's deal value is multiplied by the win probability of its current stage, and the results are summed to produce a probability-adjusted revenue projection.
 
-**Win probability**
-: The estimated likelihood (as a percentage) that an opportunity will close successfully, typically assigned at the stage level and calibrated over time using historical close rate data.
+Win probability
+  The estimated likelihood (as a percentage) that an opportunity will close successfully, typically assigned at the stage level and calibrated over time using historical close rate data.
+:::
 
 ---
 
